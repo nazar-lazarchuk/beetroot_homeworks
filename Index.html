@@ -7,6 +7,46 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="mailto:anna.pereklad@gmail.com" method="post">
+        <h1>Анкета посетителя ресторана</h1>
+
+        <fieldset>
+            <legend>
+                <h3>Контактная информация</h3>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Имя</label>
+                    </td>
+                    <td><input id="name" type="text" required maxlength="255"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="tel"> Телефон</label>
+                    </td>
+                    <td><input id="tel" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="000-000-0000">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email"> Email</label>
+                    </td>
+                    <td><input id="email" type="email" required></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="date"> Дата посещения</label>
+                    </td>
+                    <td><input id="date" type="date"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+    </form>
 </body>
 </html>
