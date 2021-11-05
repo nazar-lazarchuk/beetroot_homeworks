@@ -1,0 +1,138 @@
+.nav {
+    width: 941px;
+    height: 53px;
+    padding-left: 252px;
+    padding-top: 23px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav>li {
+    margin-left: 34px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.nav>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    font-size: 47px;
+    line-height: 64px;
+    color: black;
+}
+
+.am{
+    color: black;
+    background-color: #f6f6f6;
+}
+
+h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: black;
+}
+
+.am p{
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+}
+
+.subtitle{
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+}
+.skills ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+}
+
+.skills ul li div{
+    font-family: Gilroy-Bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+.portfolio{
+    text-align: center;
+    background-color: #f6f6f6;
+    color: black;
+}
+
+.portfolio div{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.contacts{
+    text-align: center;
+}
+
+.contacts div{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+}
+
+.button{
+    background-color: black;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.contacts ul{
+    max-width: 940px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.contacts p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;
+}
