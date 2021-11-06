@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Анкета відвідувача ресторану
+        </h1>
+    </header>
+    <div class="main">
+        <form action="#" method="get" name="quest" id="quest">
+            <fieldset>
+                <legend>Контактна інформація</legend>
+                <p><label for="name">Ім'я</label><input type="text" name="name" id="name" required  maxlength="15" pattern="^[А-Яа-яЄєЇї]+$"> </p>
+                <p><label for="tel">Телефон</label><input type="tel" name="tel" id="tel" required pattern="[0-9]{10,13}" minlength="10" maxlength="13"></p>
+                <p><label for="email">Email</label><input type="email" name="email" id="email" required></p>
+                <p><label for="date">Дата відвідування</label><input type="date" name="date" id="date"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Персональна інформація</legend>
+                <p><label for="number">Вік</label><input type="number" min="1" max="100" step="1" name="number" id="number"></p>
+                <p><label for="kitchen">Улюблена кухня</label>
+                    <select name="kitchen" id="kitchen">
+                    <option value="k1" selected>Українська</option>
+                    <option value="k2">Німецька</option>
+                    <option value="k3">Французька</option>
+                    </select></p>
+                <p><label>Які страви Ви хочете побачити в меню<textarea name="texta" form="quest" cols="30" rows="3"></textarea></label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Оцінка нашого закладу</legend>
+                <p><label>Чому Ви вибрали наш заклад?</label></p>
+                <p><label><input type="radio" name="rat1">Не далеко від дому</label></p>
+                <p><label><input type="radio" name="rat1">Бачив рекламу</label></p>
+                <p><label><input type="radio" name="rat1">Рекомендували</label></p>
+                <p><label><input type="radio" name="rat1" checked>Співвідношення ціна та якість</label></p>
+                <p><label>Чи будете рекомендувати наш заклад?</label></p>
+                <p><label><input type="radio" name="rat2" checked>Так</label></p>
+                <p><label><input type="radio" name="rat2">Ні</label></p>
+            </fieldset>
+            <input type="submit" value="Надіслати">
+        </form>
+    </div>
+</body>
+</html>
