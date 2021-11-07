@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: trebuchet, arial, sans-serif;
+}
+
+header {
+    background-color: #4A4F56;
+}
+
+h1, h2 {
+    color: #FF8984;
+}
+
+h1+h2{
+    margin-top: 4px;
+    padding-bottom: 12px;
+}
+
+h1 {
+    padding-top: 19px;
+}
+
+body {
+    background-color: #3B3F45;
+}
+
+.list>li {
+    margin: 0 auto;
+    text-align: left;
+    height: 45px;
+    color: #fff;
+    padding-top: 11px;
+}
+
+li:nth-child(odd){
+    background-color: #88839E;
+}
+
+li:nth-child(even){
+    background-color: #7A7593;
+}
+.list {
+    position: relative;
+    width: 546px;
+    margin: 0 auto;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.big {
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+}
+
+.small{
+    font-size: 11px;
+    line-height: 13px;
+    font-style: normal;
+}
+
+.small::before {
+    content: "\0028";
+}
+
+.small::after{
+    content: "\0029";
+}
+
+li:hover {
+    background-color: #625E77;
+    transition: all .1s ease-in;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+li:active {
+    background-color: #FF8984;
+    opacity: 0.7;
+}
+
+input[type="checkbox"]:checked ~ span {
+    text-decoration-line: line-through;
+}
+
+button[type="button"] {
+    margin-top: 45px;
+    width: 534px;
+    height: 45px;
+    color: #FF8984;
+    background-color: #4A4F56;
+    border: none;
+    font-size: 18px;
+}
