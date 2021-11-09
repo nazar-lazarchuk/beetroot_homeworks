@@ -1,0 +1,33 @@
+
+body{
+   font-family: 'Open Sans', sans-serif;
+   text-align: center;
+}
+
+hr{
+   width: 941px;
+}
+
+#about_me{
+   background-color: #F6F6F6;
+}
+
+nav a{
+   margin: 0px 41px;
+}
+
+.icon_skills{
+   display: flex;
+  justify-content: space-evenly;
+}
+
+ .icon_contacts, a {
+   padding: 20px 41px;
+}
+
+button{
+   font-size: 18px;
+   background-color: #000;
+   color: #F6F6F6;
+   border-radius: 50px;
+}
