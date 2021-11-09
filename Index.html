@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Переробила, щоб table не конфліктувала з label-->
+    <form action="mailto:anna.pereklad@gmail.com" method="post">
+        <h1>Анкета посетителя ресторана</h1>
+
+        <fieldset>
+            <legend>
+                <h3>Контактная информация</h3>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Имя</label>
+                    </td>
+                    <td><input id="name" type="text" required maxlength="255"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="tel"> Телефон</label>
+                    </td>
+                    <td><input id="tel" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="000-000-0000">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email"> Email</label>
+                    </td>
+                    <td><input id="email" type="email" required></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="date"> Дата посещения</label>
+                    </td>
+                    <td><input id="date" type="date"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <h3>Персональная информация</h3>
+            </legend>
+            <table>
+
+                <tr>
+                    <td>
+                        <label for="age"> Возраст</label>
+                    </td>
+                    <td><input id="age" type="number" min="1" max="100" step="1"></td>
+                </tr>
+
+                <tr>
+                    <td>Любимая кухня</td>
+                    <td><select name="Cuisine">
+                            <option value="1" selected>Украинская</option>
+                            <option value="2">Грузинская</option>
+                            <option value="3">Вьетнамская</option>
+                            <option value="4">Мексиканская</option>
+                            <option value="5">Средиземноморская</option>
+                            <option value="6">А дома лучше</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td>Какие блюда вы хотели бы <br> увидеть в меню</td>
+                    <td><textarea name="clientsmenu" cols="30" rows="3"></textarea></td>
+                </tr>
+
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <h3>Оценка нашего заведения</h3>
+            </legend>
+                <b>Почему вы выбрали наше заведение</b> <br><br>
+                <label><input type="radio" name="choise" value="1">Недалеко от дома/работы</label> <br>
+                <label><input type="radio" name="choise" value="2">Увидел рекламу</label> <br>
+                <label><input type="radio" name="choise" value="3">Посоветовали</label> <br>
+                <label><input type="radio" name="choise" value="4" checked>Оптимальное соотношение цены и
+                    качества</label>
+            <br>
+            <br>
+                <b>Вы бедете рекомендовать наше заведение своим знакомым?</b> <br><br>
+                <label><input type="radio" name="recommend" value="1" checked>Да</label> <br>
+                <label><input type="radio" name="recommend" value="2">Нет</label> <br>
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
