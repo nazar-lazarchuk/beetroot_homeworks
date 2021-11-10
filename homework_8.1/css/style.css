@@ -1,0 +1,130 @@
+
+
+
+
+body{
+   font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	margin: 20px 0px 100px 0px;
+}
+
+h2{
+    font-size: 34px;
+}
+
+
+/* Шапка профиля */
+#home{
+display: block;
+width: 940px;
+margin: 0 auto;
+}
+
+.line{
+	border-bottom: 2px solid #828282;
+    width: 940px;
+	margin: 23px auto; 
+    opacity: 0.2;
+}
+
+.navigation{
+padding: 0px 20px;
+text-decoration: none;
+color: #828282;
+font-size: 18px;
+}
+
+.navigation:hover{
+    color: black;
+}
+
+h1{
+    text-align: left;
+    font-size: 47px;
+}
+
+
+.photo{
+    width: 940px;
+    height: 387px;
+}
+
+/* Про Denisa */
+.info{
+    margin: 100px 0px;
+    height: 517px;
+    background-color: #F6F6F6;
+}
+
+#about_me{
+    padding: 100px 0px;
+}
+
+aside p{
+    font-size: 18px;
+}
+
+/* Skills */
+
+.icon_skills{
+display: flex;
+justify-content: space-around;
+margin: 83px 200px;
+}
+
+h3{
+    font-size: 14px;
+    color: #828282;
+}
+
+.star{
+    padding-top: 50px;
+}
+
+/* Portfolio */
+.work{
+    height: 2200px;
+    background-color: #F6F6F6;
+    margin: 100px 0px;
+}
+
+#portfolio{
+    padding: 100px 0px;
+}
+
+.work p{
+    margin-bottom: 100px;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Contacts */
+
+footer p{
+    font-size: 18px;
+    padding-bottom: 78px;
+}
+
+form{
+padding-bottom: 30px;
+} 
+button{
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 5px 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.icon_contacts a{
+    padding: 0px 30px;
+}
+
+footer h3{
+    font-weight: 400;
+    padding-top: 40px;
+}
