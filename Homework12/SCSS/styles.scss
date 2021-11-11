@@ -1,0 +1,110 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0; font-family: Poppins;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:Poppins;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:Poppins;font-weight:Poppins;}
+/*--------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+$fontfamily:"Poppins";
+
+.cotainer__table{
+	
+	table{
+		width: 100%;
+		border-collapse: collapse;
+		span{
+			font-size: 12px;
+			line-height: 15px;
+			color: #606F89;	
+		}
+	}
+	
+	table tr:nth-child(1),table tr:nth-child(3),table tr:nth-child(5){
+		background-color: #F4F7FC;
+	}
+	table tr{
+		height: 56px;
+		
+	}
+	table th:nth-child(2){
+		text-align: start;
+		padding-right: 151px;
+		
+	}
+	table th:nth-child(4){
+		text-align: center;
+		padding-left: 104px;
+		
+		
+	}
+	table th:nth-child(5){
+		text-align: center;
+		padding-left: 40px;
+	}
+
+	table td:nth-child(2){
+		text-align: start;
+		width: 150px;
+	}
+
+	
+	table td:nth-child(3){
+		width: 200px;
+		text-align: start;
+	}
+	table td:nth-child(4){
+		width: 100px;
+		text-align: center;
+		padding-left: 103px;
+	}
+	table td:nth-child(5){
+		width: 100px;
+		padding-left: 50px;
+		text-align: center;
+		.status{
+			border: 1px solid #606F89;
+			padding: 5px;
+			border-radius:11px;
+		}
+	}
+	table td:nth-child(6){
+		padding-left: 100px;
+	}
+	button{
+		background: none;
+		margin-left: 20px;
+	}
+	input{
+		width: 20px;
+		height: 20px;
+		margin: 13px 30px 13px 30px;
+		cursor: pointer;
+	}
+	.custom-checkbox {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+	  }
+	  .custom-checkbox+label::before {
+		content: '';
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 1px solid #606F89;
+		margin-left: 30px;
+		border-radius: 3px;
+		background-color: white;
+	  }
+}
