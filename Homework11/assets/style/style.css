@@ -22,6 +22,10 @@ header {
     margin-right: 20px;
 }
 
+.navigation li a {
+    text-decoration: none;
+}
+
 .logo {
     margin-right: 320px;
 }
