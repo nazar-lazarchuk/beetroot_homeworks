@@ -1,0 +1,100 @@
+body {
+  margin: 0 auto;
+}
+
+main {
+  max-width: 793px;
+  height: 507px;
+  background-color: #3b3f45;
+  text-align: center;
+  margin: 25px auto;
+  vertical-align: middle;
+}
+
+header {
+  display: grid;
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 793px;
+  height: 82px;
+  background-color: #4a4f56;
+}
+
+h2,
+h4 {
+  color: #ff8984;
+  font-family: "Roboto", sans-serif;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+.small_text {
+  font-size: 12px;
+}
+
+.small_text::before {
+  content: "(";
+}
+
+.small_text::after {
+  content: ")";
+}
+
+section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 534px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  height: 42px;
+  border: 2px solid #88839e;
+  border-style: hidden;
+  background-color: #88839e;
+}
+
+label:nth-child(2n) {
+  background-color: #7a7593;
+}
+
+input[type="checkbox"] {
+  margin-top: 13px;
+  margin-left: 10px;
+}
+
+label:hover {
+  background-color: #625e77;
+  border-top: 2px solid antiquewhite;
+  border-bottom: 2px solid antiquewhite;
+}
+
+label:active {
+  background-color: #ff8984;
+  border-top: 2px solid antiquewhite;
+  border-bottom: 2px solid antiquewhite;
+}
+
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+
+button {
+  display: block;
+  margin: 40px auto;
+  background-color: #4a4f56;
+  width: 534px;
+  height: 45px;
+  border: none;
+  color: #ff8984;
+  font-family: "Roboto", sans-serif;
+}
+
+button:active {
+  border: 2px solid #3f4349;
+}
