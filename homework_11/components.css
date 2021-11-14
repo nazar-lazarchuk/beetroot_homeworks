@@ -1,0 +1,32 @@
+.button__box {
+width: 380px;
+margin-top: 45px;
+}
+
+.button__started {
+width: 145px;
+height: 53px;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+background: #FF9900;
+border-radius: 4px;
+border: 2px solid #FF9900;
+cursor: pointer;
+}
+
+.button__video {
+width: 170px;
+margin-left: 10px;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+background-color: #FFFFFF;
+text-decoration-line: underline;
+color: #FF9900;
+border: 1px solid white;
+cursor: pointer;
+}
