@@ -1,0 +1,228 @@
+body {
+    width: 1445px;
+    height: 4706px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    width: 940px;
+    height: 52px;
+    margin: 22px 252px 0 252px ;
+}
+
+nav ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0 41px 0 0;
+}
+
+nav ul li a {
+    color: #828282;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+nav ul li:first-child a {
+    color: black;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    display: inline-block;
+    margin: 36px 868px 38px 249px;
+}
+
+.developer {
+    width: 944px;
+    height: 387px;
+    margin-left: 252px;
+}
+
+.about_me {
+    height: 517px;
+    margin-top: 80px;
+    margin-left: -10px;
+    background: #F6F6F6;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    padding-top: 101px;
+}
+
+div.my_description {
+    height: 246px;
+    text-align: center;
+    margin-top: -8px;
+}
+
+div.my_description ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.my_description ul li {
+    list-style-type: none;
+    margin-bottom: 50px;
+    margin-left: -40px;
+}
+
+div.my_description ul li:last-child {
+    margin-bottom: 0;
+}
+
+div.my_description ul li span {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+section.skills {
+    height:  580px;
+}
+
+h3.h3_skills {
+    padding-top: 50px;
+    margin-left: -8px;
+}
+
+.skills_agenda {
+    text-align: center;
+}
+
+div.skills_agenda p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: -8px;
+}
+
+div.programms_logo {
+    margin: 12px 254px 0 254px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 937px;
+}
+
+div.program_logo {
+    width: 166px;
+    text-align: center;
+}
+
+div.program_logo > img {
+    margin-bottom: 15px;
+}
+
+div.program_logo > img:last-child {
+    margin-top: -50px;
+}
+
+div.program_logo > span {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+div.rate_stars {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+div.rate_stars > img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+section.portfolio {
+    height: 2239px;
+    width: 1445px;
+    margin-top: 90px;
+    background-color: #F6F6F6;
+}
+
+h3.h3_portfolio {
+    padding-top: 118px;
+}
+
+div.store {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 70px;
+}
+
+div.store a {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: black;
+}
+
+section.contacts {
+    height: 671px;
+    width: 1445px;
+    text-align: center;
+}
+
+.h3_contacts {
+    margin-top: 0;
+}
+
+.contacts_description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: -50px;
+}
+
+section.contacts form {
+    margin-top: 35px;
+}
+
+.send-btn {
+    height: 42px;
+    width: 180px;
+    background: black;
+    border-radius: 20px;
+}
+
+.send-btn span {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+}
+
+div.socials {
+    width: 340px;
+    margin: 18px 552px 10px 552px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials_tip {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+}
