@@ -1,0 +1,138 @@
+* {
+    transition: all .1s ease-in;
+}
+
+html, body {
+    margin: 0px auto;
+    padding: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+body {
+    background: #3B3F45;
+}
+
+header {
+    max-height: 82px;
+    width: 100%;
+    background-color: #4A4F56;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h3 {
+    color: #FF8984;
+    margin: 0;
+}
+
+.heading__name {
+    padding-top: 19px;
+    padding-right: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.heading__motto {
+    font-size: 16px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+main {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.shopping {
+    max-height: 360px;
+    width:  534px;
+    margin-top: 20px;
+}
+
+.shopping-list {
+    background-color: white;
+}
+
+form label {
+    width: 534px;
+    height: 45px;
+    line-height:45px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    background-color: #88839E;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border: 0;
+}
+
+form label:nth-child(2n) {
+    background: #7A7593;
+}
+
+form label:hover {
+    width: 534px;
+    height: 45px;
+    background-color: #625E77;
+    cursor: pointer;
+}
+
+form label:hover::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background: white;
+    position: relative;
+    top: 0;
+    
+}
+
+form label:hover::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: white;
+    position: relative;
+    bottom: 0;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 10px;  
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.tip {
+    font-size: 11px;
+    line-height: 45px; 
+    vertical-align: top;
+}
+
+form > input[type="submit"] {
+    width: 534px;
+    height: 45px;
+    margin-top: 45px;
+    padding-right: 26px;
+    background-color: #4A4F56;
+    color: #FF8984;
+    border: 0;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+}
