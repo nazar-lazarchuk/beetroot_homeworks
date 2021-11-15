@@ -1,0 +1,60 @@
+body {
+  width: 1445px;
+  height: 4706px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #828282;
+}
+.denis {
+  text-align: center;
+}
+.aboutme {
+  background: #f6f6f6;
+  text-align: center;
+}
+.skills {
+  text-align: center;
+}
+div {
+  display: flex;
+  justify-content: center;
+  font-family: Georgia;
+}
+.adobe_i {
+  margin-left: 167px;
+}
+.adobe_ae {
+  margin-left: 167px;
+}
+.figma {
+  margin-left: 167px;
+}
+.portfolio {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.portfolio1 {
+  margin-top: 50px;
+}
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+.chat {
+  margin-bottom: 75px;
+}
+.like_me {
+  color: #828282;
+  margin-top: 25px;
+}
