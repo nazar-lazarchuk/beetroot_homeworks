@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: Roboto;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: Roboto;
+  font-weight: Roboto;
+}
+
+/*--------------------*/
+body {
+  max-width: 1920px;
+}
+
+#element::-webkit-scrollbar {
+  width: 10px;
+}
+
+#element::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+#element::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00c6fb), to(#005bea));
+  background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
+.container {
+  max-width: 1840px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 55px;
+  padding: 16px 30px 120px 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+.container .header .change-lang {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: fixed;
+  cursor: pointer;
+}
+.container .header .header__navbar {
+  position: fixed;
+  margin-left: 60px;
+}
+.container .header .header__navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container .header .header__navbar ul li a {
+  color: #000000;
+  letter-spacing: 1px;
+}
+.container .header .logo {
+  margin-left: 1550px;
+  position: fixed;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.info .sidebar {
+  width: 100%;
+}
+.info .sidebar .sidebar_link {
+  position: fixed;
+}
+.info .sidebar .sidebar_link ul li {
+  border-bottom: 1px solid #BFBFBF;
+  padding-bottom: 2px;
+  width: 1920px;
+  margin-bottom: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.info .sidebar .sidebar_link ul li small {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20.988px;
+  line-height: 25px;
+  color: #000000;
+  margin: 23px 25px;
+}
+.info .sidebar .sidebar_link ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  font-family: Roboto;
+  color: #000000;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.info .sidebar .sidebar_link ul li a small {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20.988px;
+  line-height: 25px;
+  color: #000000;
+  margin: 23px 25px;
+}
+.info .info-general {
+  z-index: 50;
+  max-width: 1160px;
+  padding-left: 210px;
+}
+.info .info-general h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.info .info-general .border-block {
+  position: absolute;
+  width: 80px;
+  height: 0px;
+  border: 8px solid #000000;
+}
+.info .img-frame {
+  position: fixed;
+  margin-top: 180px;
+  margin-left: 1230px;
+  z-index: 2;
+}
