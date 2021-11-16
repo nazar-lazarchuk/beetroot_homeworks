@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+   background-color: white; 
+   font-family: "Roboto";
+}
+main {
+    width: 793px;
+    height: 507px;
+    box-sizing: border-box;
+    background-color: #3B3F45;
+    text-align: center;
+}
+
+header{
+    height: 82px;
+    padding: 19px 270px 12px;
+    background-color: #4A4F56;  
+    color: #FF8984;
+}
+
+h3{
+    font-family: "Roboto 400";
+    margin: 0px;
+    padding-top: 8px ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+h1{
+    font-family: "Roboto 700";
+    margin: 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+section{
+    display: block;
+    width: 534px;
+    height: 270px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px auto 45px;
+}
+
+button{
+    width: 534px;
+    height: 45px;
+    background: #4A4F56;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #FF8984;
+
+    
+}
+
+label:nth-child(odd){
+    background-color: #88839E;
+    border-top: 2px solid #88839E;
+    border-bottom: 2px solid #88839E;
+}
+label:nth-child(even){
+    background-color: #7A7593 ;
+    border-top: 2px solid #7A7593;
+    border-bottom: 2px solid #7A7593;
+    
+}
+
+label{
+    width: 100%;
+    height: 45px;
+    display: inline-block;
+    text-align: left;
+    color:white;
+   
+
+}
+
+input[type=checkbox] {
+
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    padding: 10px;
+    margin-top: 15px ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.addition1::after{
+    content: " (for the next lessons about CSS)";
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-left:10px;
+
+}
+
+.addition2::after{
+    content: " (for more CSS manipulations)";
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-left:10px;
+
+}
+.addition3::after{
+    content: "(because they are awesome)";
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-left:10px;
+    
+
+}
+.addition4::after{
+    content: "(hm... they always dissapear)";
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-left:10px;
+
+}
+
+
+.addition6::after{
+    content: "(for my friends)";
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-left:10px;
+
+}
+
+
+button[type="submit"]:hover {
+    border-color: white;
+    color: white;
+}
+
+label:hover {
+    background-color: #625e77;
+    border-top: 2px solid antiquewhite;
+    border-bottom: 2px solid antiquewhite;
+  }
+
+label:active{
+    background-color: rgb(240, 82, 82);
+  }
+
+
+*{transition: all .1s ease-in;}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+}
+  
+  
