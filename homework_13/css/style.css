@@ -48,22 +48,42 @@ h5{
    line-height: 26px;
 }
 
-.header__button,
-.feature__button{
-   width: 175px;
-   height: 53px; 
+
+.button{
+   border-radius: 4px;
 }
 
-.header__button,
-.feature__button,
-.footer__form--button{
+.button--primary{
    background-color: #FF9900;
    border: 1px solid #FF9900;
-   border-radius: 4px;
-   font-size: 16px;
-   font-weight: 700;
    color: #FFFFFF;
+   font-size: 16px;
+   
 }
+.button--secondary{
+   border: 1px solid #BCD0E5;
+   background-color: #FFFFFF;
+   color: #173A56;
+   font-size: 16px;
+}
+
+.button--size-lg{
+   width: 175px;
+   height: 53px; 
+   font-weight: 700;
+}
+.button--size-sm{
+   width: 102px;
+   height: 46px;
+   font-weight: 600;
+}
+
+footer .button--size-lg{
+   width: 131px;
+   height: 39px;
+}
+
+
 
 .block_header,
 .feature_card,
@@ -104,26 +124,10 @@ h5{
    color: #FF9900;
 }
 
-.navigation_button-one, 
-.navigation_button-two{
-   width: 102px;
-   height: 46px;
-   border-radius: 4px;
-   font-size: 16px;
-   font-weight: 600;
+.block_navigation .button--secondary{
+   margin-right: 14px;
 }
 
-.navigation_button-one {
-   border: 1px solid #BCD0E5;
-   background-color: #FFFFFF;
-   color: #173A56;
-}
-.navigation_button-two {
-   border: 1px solid #FF9900;
-   background-color: #FF9900;
-   color: #FFFFFF;
-   margin-left: 14px;
-}
 
 /*____________________header___________________ */
 .block_header {
@@ -163,7 +167,7 @@ h5{
    margin-top: 100px;
 }
 
-.feature__button {
+.feature .button {
    position: relative;
    left: 50%;
    transform: translate(-50%,0);
@@ -269,7 +273,3 @@ h5{
    margin-bottom: 21px;
 }
 
-.footer__form--button{
-   width: 131px;
-   height: 39px;
-}
