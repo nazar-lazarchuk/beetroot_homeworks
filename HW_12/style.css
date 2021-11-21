@@ -1,0 +1,205 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #adbdd6;
+}
+
+.container {
+    max-width: 1020px;
+    width: 100%;
+    height: 730px;
+    margin: 0 auto 0 auto;
+}
+
+.general-container {
+    background-color: #FFFFFF;
+}
+
+.heading {
+    height: 15px;
+    margin: 100px auto 0 auto;
+    font-size: 14px;
+    color: #606F89;
+}
+
+.stick {
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+table {
+    margin-top: 60px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 56px;
+}
+
+tr:nth-child(even) {
+    background: #F4F7FC;
+}
+
+td > div,
+th > div {
+    width: 197px;
+    height: 34px;
+}
+
+th {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: #606F89;
+}
+
+.head-row {
+    height: 45px;
+    background-color: #F4F7FC;
+}
+
+th:first-child, td:first-child {
+    width: 80px;
+    text-align: center;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 242px;
+    text-align: left;
+}
+
+th:nth-child(3) {
+    width: 254px;
+}
+
+td:nth-child(3) {
+    width: 313px;
+}
+
+th:nth-child(3) {
+    padding-left: 59px;
+    text-align: left;
+}
+
+td:nth-child(3) div p {
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2E3B52;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 130px;
+}
+
+td:nth-child(4) {
+    font-size: 14px;
+    line-height: 17px;
+    color: #2E3B52;
+    text-align: center;
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 100px;
+}
+
+td:nth-child(5) {
+    text-align: center;
+}
+
+th:nth-child(6), td:nth-child(6) {
+    width: 155px;
+}
+
+td:nth-child(6) > div {
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+td:nth-child(6) > div:first-child {
+    padding-left: 0;
+}
+
+input.regular_checkbox {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.client-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2E3B52;
+}
+
+.cell-number {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #606F89;
+}
+
+button.btn__active,
+button.btn__inactive {
+    position: relative;
+}
+
+button.btn__active span {
+    position: absolute;
+    left: calc(50% - 39px/2 - 0.5px);
+    top: calc(50% - 12px/2);    
+}
+
+button.btn__inactive span {
+    position: absolute;
+    left: calc(50% - 50px/2);
+    top: calc(50% - 12px/2);
+}
+
+.btn {
+    height: 20px;
+    border-radius: 11px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+}
+
+.btn__active {
+    width: 49px;
+    border: none;
+    background: #0A65FF;
+    color: #FFFFFF;
+}
+
+.btn__inactive {
+    width: 60px;
+    border: 1px solid #606F89;
+    box-sizing: border-box;
+    background: transparent;
+    color: #606F89;
+}
+
+button.last-column {
+    padding-left: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
