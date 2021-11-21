@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fons/icon.css" />
+<link rel="stylesheet" href="/css/styles.css" />
+	<title>Слайдер</title>
+	<meta charset="utf-8">
+	
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="form">
+			<form action="#" id="form" class="form__body">
+				<h1 class="form__title">Profile</h1>
+				<div class="form__item">
+					<div class="file">
+						<div id="formPreview" class="file__preview"></div>
+						<div class="file__item">
+							<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+							<div class="file__button"><i class="icon-Photo-Camera"></i></div>
+							<button type="button" class="delete"><i class="icon-Trash"></i></button>
+							<br>
+							<span>Up to 1 MB (300x300 px)</span>
+						</div>
+					</div>
+				</div>
+				<div class="form__name">
+					<div class="form__item">
+						<label for="formName" class="form__label">Name</label>
+						<input id="formName" type="text" name="name" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">E-mail</label>
+						<input id="formEmail" type="text" name="Email" class="form__input _req _email">
+					</div>
+				</div>
+				<div class="form__item_contry">
+					<div class="text_label">
+						<div class="form__label">Country:</div>
+						<div class="form__label">City:</div>
+					</div>
+					<div class="select__country">
+						<select name="Country" class="select">
+							<option selected>Ukraine</option>
+							<option >Russia</option>
+							<option >Sweden</option>
+							<option >Norway</option>
+							<option >Lithuania</option>
+							<option >Latvia</option>
+							<option >Ireland </option>
+							<option >Finland</option>
+							<option >Estonia</option>
+							<option >Germany</option>
+							<option >Belgium</option>
+							<option >Austria</option>
+							<option >Switzerland</option>
+							<option >Portugal</option>
+							<option >Greece </option>
+							<option >Spain</option>
+							<option >Armenia</option>
+						</select>
+						<input id="City" type="text" name="name" class="form__input _req">
+					</div>
+					<div class="form__number-code">
+						<div class="form__item">
+							<label for="formCode" class="form__label">Zip Code</label>
+							<input id="formCode" type="text" name="name" class="form__input _req">
+						</div>					
+						<div class="form__item">
+							<label for="formNumber" class="form__label">Phone Number</label>
+							<input id="formNumber" type="text" name="name" class="form__input _req">
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="form__button">Create</button>
+			</form>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
