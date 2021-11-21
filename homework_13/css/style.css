@@ -1,0 +1,275 @@
+body, html{
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+   
+}
+
+.container{
+   width: 100%;
+   max-width: 1094px;
+   margin: 30px auto;
+}
+
+h1{
+   font-size: 44px;
+   font-weight: 700;
+   color: #2F281E;
+   line-height: 54px;
+}
+
+h2 {
+   font-size: 36px;
+   font-weight: 700;
+   color: #2F281E;
+   text-align: left;
+   margin-bottom: 45px;
+   margin-top: 30px;
+}
+
+h4{
+   font-size: 22px;
+   font-weight: 600;
+   color: #2F281E;
+   margin-bottom: 14px;
+}
+
+h5{
+   font-size: 16px;
+   font-weight: 700;
+   color: #2F281E;
+   margin-bottom: 12px;
+}
+
+.text{
+   font-size: 16px;
+   font-weight: 500;
+   color: #544837;
+   line-height: 26px;
+}
+
+
+.button{
+   border-radius: 4px;
+}
+
+.button--primary{
+   background-color: #FF9900;
+   border: 1px solid #FF9900;
+   color: #FFFFFF;
+   font-size: 16px;
+   
+}
+.button--secondary{
+   border: 1px solid #BCD0E5;
+   background-color: #FFFFFF;
+   color: #173A56;
+   font-size: 16px;
+}
+
+.button--size-lg{
+   width: 175px;
+   height: 53px; 
+   font-weight: 700;
+}
+.button--size-sm{
+   width: 102px;
+   height: 46px;
+   font-weight: 600;
+}
+
+footer .button--size-lg{
+   width: 131px;
+   height: 39px;
+}
+
+
+
+.block_header,
+.feature_card,
+.block_managers,
+.block_marketers,
+.block_design,
+.block_footer{
+   display: flex;
+   justify-content: space-between;
+}
+
+/*____________________nav___________________*/
+.block_navigation {
+   display: flex;
+   justify-content: space-between;
+}
+
+.navigation{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+.navigation__img{
+   width: 185px;
+   height: 32px;
+}
+
+
+.navigation__link a{
+   font-size: 14px;
+   text-decoration: none;
+   line-height: 28px;
+   color: #2F281E;
+   padding: 0px 20px;
+}
+
+.navigation__link a:hover{
+   color: #FF9900;
+}
+
+.block_navigation .button--secondary{
+   margin-right: 14px;
+}
+
+
+/*____________________header___________________ */
+.block_header {
+   margin-top: 70px;
+   align-items: center;
+}
+
+
+.header__text {
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 28px;
+
+}
+.header__button {
+   margin: 40px 30px 0px 0px;
+}
+
+.header__link{
+   font-size: 16px;
+   font-weight: 600;
+   color: #FF9900;
+}
+
+.header__link img{
+   height: 15px;
+   padding-left: 9px;
+}
+.header__img {
+   width: 604px;
+   height: 495px;
+}
+
+
+/*_____________feature___________*/
+.feature {
+   margin-top: 100px;
+}
+
+.feature .button {
+   position: relative;
+   left: 50%;
+   transform: translate(-50%,0);
+}
+
+.feature h2{
+   text-align: center;
+}
+
+/*_______________Design Professionals_____________*/
+.block_design{
+   margin-top: 200px;
+   margin-bottom: 100px;
+}
+
+.block_design h2{
+   margin-bottom: 22px;
+}
+
+.design__img{
+   height: 574px;
+   width: 520px;
+   align-items: center;
+}
+
+
+/*_______________Product Managers_________________*/
+.block_managers {
+   margin-bottom: 120px;
+}
+
+.block_managers h2{
+   margin-bottom: 22px;
+}
+
+.managers__list{
+   list-style-type: none;
+   padding: 0px;
+}
+
+.managers__list li{
+   background: url('../img/markers.png') 0 50% no-repeat;
+   padding-left: 60px;
+   margin: 20px 0px;
+}
+
+
+
+.managers__img {
+   width: 532px;
+   height: 520px;
+}
+
+/*_____________Marketers_______________*/
+.block_marketers {
+   margin-bottom: 142px;
+}
+
+.block_marketers h2 {
+   margin-bottom: 22px;
+   
+}
+
+.marketers__img {
+   height: 609px;
+   width: 542px;
+}
+
+
+/*_________________footer__________________*/
+.footer__list li{
+   list-style-type: none;
+   padding-bottom: 10px;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.footer__list a{
+   text-decoration: none;
+   color:#544837;
+}
+
+.footer__list a:hover{
+   color: #FF9900;
+}
+
+.footer__img{
+   height: 32px;
+   width: 185px;
+}
+
+.footer__form{
+   display: flex;
+   flex-direction: column;
+}
+
+.footer__form--text{
+   height: 48px;
+   width: 325px;
+   border: 1px solid #BCD0E5;
+   border-radius: 4px;
+   font-size: 16px;
+   margin-bottom: 21px;
+}
+
