@@ -115,12 +115,12 @@ button.status-icons__button {
   border: none;
   margin: 0 7px;
 }
-button#edit {
+button.status-icons__button--edit {
   background-image: url(Assets/Edit.png);
 }
-button#trash {
+button.status-icons__button--trash {
   background-image: url(Assets/Delete.png);
 }
-button#more {
+button.status-icons__button--more {
   background-image: url(Assets/More.png);
 }
