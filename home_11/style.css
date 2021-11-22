@@ -1,0 +1,167 @@
+body {
+    margin: 0 144px;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+header img {
+    max-width: 186px;
+    max-height: 32px;
+    margin-top: 10px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    padding-left: 200px;
+    margin-left: 50px;
+}
+.nav > li > a {
+    text-decoration: none;
+    color: #2f281e;
+    margin-left: 20px;
+}
+
+.main-buttons {
+    margin-top: 10px;
+}
+
+.main-buttons > button {
+    cursor: pointer;
+    padding: 11px 23px;
+    background: white;
+    color: #173a56;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+}
+
+.main-buttons > .main-button,
+.header__button {
+    background: #ff9900;
+    border: 0;
+    color: white;
+}
+
+.top-block {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.top__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.top__description {
+    font-size: 18px;
+}
+
+.top-buttons {
+    margin-top: 40px;
+}
+
+.top__play > a {
+    color: #ff9900;
+}
+
+.top__play {
+    display: inline-block;
+    position: relative;
+    padding-left: 45px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline 1px;
+}
+
+.top__play::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    border: 8px solid transparent;
+    border-left: 10px solid #ff9900;
+    color: #ff9900;
+}
+
+.big-button {
+    background: #ff9900;
+    border: 0;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 53px;
+    width: 175px;
+    cursor: pointer;
+}
+
+.design-block {
+    box-sizing: border-box;
+    margin-top: 111px;
+}
+
+.design-title {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    line-height: 54px;
+    height: 108px;
+}
+.design-tools {
+    display: flex;
+}
+.design-button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.tools {
+    margin-left: 40px;
+}
+
+.design-professionals {
+    display: flex;
+    margin-top: 224px;
+}
+.design-img {
+    margin-left: 104px;
+}
+
+.product_managers {
+    display: flex;
+    margin-top: 102px;
+}
+
+.product-description {
+    margin-left: 104px;
+}
+span {
+    font-weight: 500;
+}
+h4 {
+    font-weight: 700;
+}
+.product-list {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 30px;
+    list-style-type: none;
+    list-style-image: url(/assets/check.svg);
+}
+ul span {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-left: 30px;
+}
