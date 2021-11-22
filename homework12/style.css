@@ -1,0 +1,132 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #eee;
+  font-family: "Inter", sans-serif;
+}
+.card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.container {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+}
+.block1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 10px 0;
+}
+.block1__table {
+  width: 100%;
+}
+.custom-table {
+  border-collapse: collapse;
+}
+.custom-table__th {
+  padding: 5px 10px;
+  text-align: center;
+}
+.name--position {
+  padding: 5px 45px 5px 10px;
+  text-align: start;
+  width: 150px;
+}
+.custom-table__row {
+  transition: background-color 0.3s;
+  height: 56px;
+}
+.custom-table__th {
+  color: #606f89;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.custom-table__thead .custom-table__row,
+.custom-table__tbody .custom-table__row:nth-child(even) {
+  background-color: #f4f7fc;
+}
+.full_name_position {
+  color: #2e3b52;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-align: start;
+}
+.phone-style {
+  color: #606f89;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.custom-table__data {
+  padding: 5px 10px;
+  text-align: center;
+}
+.custom-table tr.custom-table__row:hover {
+  background: lightblue;
+}
+.td-style {
+  text-align: center;
+  width: 130px;
+}
+.button--active {
+  font-weight: 500;
+  font-size: 10px;
+  background-color: #0a65ff;
+  color: #fff;
+  border: none;
+  border-radius: 11px;
+  height: 20px;
+  width: 49px;
+}
+.button--inactive {
+  font-size: 10px;
+  font-weight: 500;
+  color: #606f89;
+  background-color: transparent;
+  border: 1px solid #606f89;
+  border-radius: 11px;
+
+  width: 60px;
+  height: 20px;
+}
+
+.desription_text-style {
+  color: #2e3b52;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  width: 197px;
+  height: 34px;
+  text-align: start;
+}
+.checkbox-size {
+  height: 20px;
+  width: 20px;
+}
+.amount-style {
+  color: #2e3b52;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  width: 100px;
+}
+.deposit--position {
+  text-align: right;
+}
+.symbols--position {
+  width: 8px;
+  text-align: center;
+}
+.space-right {
+  padding-right: 20px;
+}
+.img-more {
+  margin-bottom: 4px;
+}
