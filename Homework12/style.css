@@ -1,0 +1,126 @@
+body,
+html,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1020px;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+}
+
+.standard-table {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 80px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead {
+  height: 45px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #606F89;
+}
+
+th,
+td {
+  padding:0
+}
+
+tr.standard-table__row {
+  max-height: 56px;
+  color: #2E3B52;
+}
+
+.standard-table__th,
+.standard-table__body .standard-table__row:nth-child(even) {
+  background-color: #f4f7fc;
+}
+ 
+
+.clients-name {
+  text-align: left;
+}
+
+button.standard-table {
+  height: 20px;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #606f89;
+  font-size: 10px;
+  box-sizing: border-box;
+  border-radius: 11px;
+  margin: 0;
+}
+
+th.standard-table__th.choise {
+  width: 76px;
+}
+
+button.activ {
+  background-color: #0a65ff;
+  color: #ffffff;
+  width: 49px;
+}
+
+button.inactiv {
+  background-color: white;
+  color: #606f89;
+  width: 60px;
+}
+
+td.standard-table__data:nth-child(1) {
+  text-align: center;
+  width: 81px;
+}
+
+td.standard-table__data:nth-child(2) {
+  text-align: left;
+  width: 126px;
+}
+
+td.standard-table__data:nth-child(3) {
+  text-align: left;
+  width: 389px;
+}
+
+td.standard-table__data:nth-child(3) p {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+td.standard-table__data:nth-child(4) {
+  text-align: center;
+  width: 90px;
+}
+
+td.standard-table__data:nth-child(5) {
+  text-align: center;
+  width: 111px;
+}
+
+td.standard-table__data:nth-child(6) {
+  text-align: center;
+  width: 111px;
+}
+
+button.status-icons__button {
+  
+  background-color: inherit;
+  width: 20px;
+  height: 20px;
+  border: none;
+  margin: 0 7px;
+}
+button.status-icons__button--edit {
+  background-image: url(Assets/Edit.png);
+}
+button.status-icons__button--trash {
+  background-image: url(Assets/Delete.png);
+}
+button.status-icons__button--more {
+  background-image: url(Assets/More.png);
+}
