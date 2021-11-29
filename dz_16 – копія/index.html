@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <main>
+      <form action="" method="get">
+        <div class="registration">
+          <div class="first_part_of_registration">
+            <div class="inside_block">
+              <h1>Create an Account</h1>
+              <div class="name">
+                <label class="name__first">
+                  <span>First Name</span>
+                  <input
+                    type="text"
+                    class="input__normal"
+                    id=""
+                    maxlength="20"
+                    required
+                  />
+                </label>
+
+                <label class="name__last">
+                  <span>Last name</span>
+                  <input
+                    type="text"
+                    class="input__normal"
+                    id=""
+                    maxlength="20"
+                    required
+                  />
+                </label>
+              </div>
+
+              <label class="email">
+                <span>E-mail</span>
+                <input type="email" class="input__big" id="" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required maxlength="255" />
+                <p class="information">
+                  We'll never share your email with anyone else.
+                </p>
+              </label>
+
+              <div class="custom-radio">
+                <label>
+                  <input type="radio" name="gender" value="1" />
+                  <span class="gender">Male</span>
+                </label>
+                <label class="gender__radio">
+                  <input type="radio" name="gender" value="2" />
+                  <span class="gender">Female</span>
+                </label>
+              </div>
+
+              <div class="position">
+                <label class="country">
+                  Country
+                  <span class="select__wrapper">
+                    <select size="1" class="input__medium"  name="counrty">
+                      <option value="none" style="display:none" selected disabled>Select</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="Belarus">Belarus</option>
+                      <option value="Russia">Russia</option>
+                      <option value="Poland">Poland</option>
+                      <option value="Georgia">Georgia</option>
+                      <option value="Slowakia">Slowakia</option>
+                    </select>
+                </span>
+                </label>
+                <label class="city">
+                  City
+                  <input type="text" class="input__normal" id="" />
+                </label>
+              </div>
+
+              <label class="text">
+                <input type="text" class="input__big" id="" />
+              </label>
+
+              <div class="terms_of_use">
+                <p class="information information_position">
+                  By clicking the 'Sign Up' button, you confirm that you accept
+                  our <a href="#"><strong>Terms of use</strong></a>  and  <a href="#"><strong>Privacy Policy</strong></a> .
+                </p>
+              </div>
+
+              <div class="line"></div>
+              
+              <div class="log_in">
+                  <span class=log_in__account>Have an account?<a href="#"><strong>Log in</strong></a></span>
+              </div>
+            </div>
+          </div>
+        </form>
+          <div class="second_part_of_registration"></div>
+        </div>
+     
+    </main>
+  </body>
+</html>
