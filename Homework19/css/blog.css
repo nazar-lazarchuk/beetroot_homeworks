@@ -422,9 +422,11 @@ body {
 }
 
 .posts__button {
-  max-width: 1120px;
+  max-width: 100%;
   margin: 0px auto;
   padding-top: 68px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .posts__btn {

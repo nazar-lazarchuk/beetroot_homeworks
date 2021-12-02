@@ -373,3 +373,8 @@ body {
     margin-top: 48px;
   }
 }
+.block__all-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

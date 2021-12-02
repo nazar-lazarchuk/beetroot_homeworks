@@ -126,6 +126,14 @@ body {
   max-width: 1120px;
   margin: 0px auto;
   padding-top: 64px;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.design__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*-------Adapt----*/
@@ -233,7 +241,7 @@ body {
 }
 
 .writer__quote-line {
-  width: 736px;
+  max-width: 736px;
   margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,7 +276,7 @@ body {
 }
 
 .writer__ask {
-  width: 736px;
+  max-width: 736px;
   margin: 0px auto;
   padding-top: 45px;
 }
