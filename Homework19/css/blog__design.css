@@ -121,6 +121,36 @@ body {
     display: block;
   }
 }
+@media (max-width: 1024px) {
+  .date-comments {
+    max-width: 992px;
+    margin: 0px auto;
+    padding-top: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .date-comments {
+    max-width: 736px;
+    margin: 0px auto;
+    padding-top: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .date-comments {
+    max-width: 393px;
+    margin: 0px auto;
+    padding-top: 16px;
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  .date-comments {
+    max-width: 343px;
+    margin: 0px auto;
+    padding-top: 16px;
+    display: block;
+  }
+}
 /*----------------*/
 .design__img {
   max-width: 1120px;
@@ -146,6 +176,51 @@ body {
 
   img {
     max-width: 288px;
+  }
+}
+@media (max-width: 1024px) {
+  .design__img {
+    max-width: 992px;
+    margin: 0px auto;
+    padding-top: 40px;
+  }
+
+  img {
+    max-width: 950px;
+  }
+}
+@media (max-width: 768px) {
+  .design__img {
+    max-width: 732px;
+    margin: 0px auto;
+    padding-top: 40px;
+  }
+
+  img {
+    max-width: 700px;
+  }
+}
+@media (max-width: 425px) {
+  .design__img {
+    max-width: 393px;
+    margin: 0px auto;
+    padding-top: 40px;
+  }
+
+  img {
+    max-width: 393px;
+  }
+}
+@media (max-width: 375px) {
+  .design__img {
+    max-width: 375px;
+    margin: 0px auto;
+    padding-top: 40px;
+    padding-left: 16px;
+  }
+
+  img {
+    max-width: 375px;
   }
 }
 /*----------------*/
@@ -227,6 +302,52 @@ body {
 
   a {
     margin-right: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .writer__social {
+    max-width: 736px;
+    margin: 0px auto;
+    display: block;
+    top: 150px;
+    left: 16px;
+  }
+
+  .description__info {
+    margin-top: 91px;
+  }
+
+  a {
+    margin-right: 24px;
+  }
+}
+@media (max-width: 425px) {
+  .writer__social {
+    max-width: 393px;
+    margin: 0px auto;
+    display: block;
+    top: 150px;
+    left: 16px;
+  }
+
+  .description__info {
+    margin-top: 91px;
+  }
+
+  a {
+    margin-right: 24px;
+  }
+
+  .description__writer {
+    max-width: 393px;
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 16px;
   }
 }
 .writer__info p {
@@ -335,6 +456,7 @@ body {
     max-width: 286px;
     margin: 0px auto;
     padding-top: 40px;
+    padding-left: 16px;
   }
 
   .writer__quote-line {
@@ -349,6 +471,32 @@ body {
 
   .writer__ask {
     max-width: 286px;
+    margin: 0px auto;
+  }
+
+  .tag p {
+    margin-right: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .description__container {
+    max-width: 393px;
+    margin: 0px auto;
+    padding-top: 40px;
+  }
+
+  .writer__quote-line {
+    max-width: 393px;
+    margin: 0px auto;
+  }
+
+  .writer__line {
+    height: 439px;
+    padding-right: 16px;
+  }
+
+  .writer__ask {
+    max-width: 393px;
     margin: 0px auto;
   }
 
@@ -543,6 +691,21 @@ body {
     left: 2px;
   }
 }
+@media (max-width: 425px) {
+  .form__name {
+    display: block;
+  }
+
+  .form__body {
+    max-width: 393px;
+    margin: 0px auto;
+  }
+
+  .checkbox__label::after {
+    top: 1.5px;
+    left: 2px;
+  }
+}
 .container__comments {
   max-width: 1120px;
   margin: 0px auto;
@@ -630,6 +793,50 @@ body {
 
   .visible__comments, .comments_title {
     max-width: 288px;
+    margin: 0px auto;
+  }
+
+  .checkbox__label::after {
+    top: 1.5px;
+    left: 2px;
+  }
+}
+@media (max-width: 375px) {
+  .comment__name-date {
+    display: block;
+    padding-bottom: 16px;
+  }
+  .comment__name-date p {
+    padding-bottom: 16px;
+  }
+  .comment__name-date span {
+    margin-left: 0px;
+  }
+
+  .visible__comments, .comments_title {
+    max-width: 343px;
+    margin: 0px auto;
+  }
+
+  .checkbox__label::after {
+    top: 1.5px;
+    left: 2px;
+  }
+}
+@media (max-width: 425px) {
+  .comment__name-date {
+    display: block;
+    padding-bottom: 16px;
+  }
+  .comment__name-date p {
+    padding-bottom: 16px;
+  }
+  .comment__name-date span {
+    margin-left: 0px;
+  }
+
+  .visible__comments, .comments_title {
+    max-width: 393px;
     margin: 0px auto;
   }
 

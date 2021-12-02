@@ -166,3 +166,49 @@ body {
     margin-bottom: 48px;
   }
 }
+@media (max-width: 1024px) {
+  .container__about {
+    max-width: 992px;
+    margin: 0px auto;
+    padding-top: 74px;
+  }
+
+  .title__about, .about-me__foto, .resume__btn {
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .container__about {
+    max-width: 734px;
+    margin: 0px auto;
+    padding-top: 74px;
+  }
+
+  .title__about, .about-me__foto, .resume__btn {
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 425px) {
+  .container__about {
+    max-width: 393px;
+    margin: 0px auto;
+    display: block;
+    padding-top: 74px;
+  }
+
+  .title__about, .about-me__foto, .resume__btn {
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 375px) {
+  .container__about {
+    max-width: 343px;
+    margin: 0px auto;
+    display: block;
+    padding-top: 74px;
+  }
+
+  .title__about, .about-me__foto, .resume__btn {
+    margin-bottom: 48px;
+  }
+}

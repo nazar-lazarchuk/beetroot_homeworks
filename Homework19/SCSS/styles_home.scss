@@ -182,7 +182,160 @@ p{
 	}
 
 }
+@media (max-width: 1024px){
+	.text__full-time{
+		max-width: 992px;
+		margin: 0px auto;
+		flex-direction: column;
+	}
+	.title__full-time {
+		max-width: 992px;
+		// max-height: 221px;
+		p{
+			font-family: Red Hat Display;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 23px;
+			line-height: 166%;
+			letter-spacing: 0.1em;
+			color: #000000;
+			padding-bottom: 28px;
+		}
+		img{
+			margin-bottom: 48px;
+		}
+	}
+	.all__inform {
+		max-width: 992px;
+		p{
+			font-family: Lato;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 19px;
+			line-height: 32px;
+			letter-spacing: 0.05em;
+			color: #565656;
+			padding-bottom: 48px;
+		}
+	}
 
+}
+
+@media (max-width: 768px){
+	.text__full-time{
+		max-width: 734px;
+		margin: 0px auto;
+		flex-direction: column;
+	}
+	.title__full-time {
+		max-width: 734px;
+		p{
+			font-family: Red Hat Display;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 23px;
+			line-height: 166%;
+			letter-spacing: 0.1em;
+			color: #000000;
+			padding-bottom: 28px;
+		}
+		img{
+			margin-bottom: 48px;
+		}
+	}
+	.all__inform {
+		max-width: 734px;
+		p{
+			font-family: Lato;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 19px;
+			line-height: 32px;
+			letter-spacing: 0.05em;
+			color: #565656;
+			padding-bottom: 48px;
+		}
+	}
+
+}
+
+
+
+@media (max-width: 425px){
+	.text__full-time{
+		max-width: 393px;
+		margin: 0px auto;
+		flex-direction: column;
+	}
+	.title__full-time {
+		max-width: 393px;
+		p{
+			font-family: Red Hat Display;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 23px;
+			line-height: 166%;
+			letter-spacing: 0.1em;
+			color: #000000;
+			padding-bottom: 28px;
+		}
+		img{
+			margin-bottom: 48px;
+		}
+	}
+	.all__inform {
+		max-width: 393px;
+		p{
+			font-family: Lato;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 19px;
+			line-height: 32px;
+			letter-spacing: 0.05em;
+			color: #565656;
+			padding-bottom: 48px;
+		}
+	}
+}
+
+
+@media (max-width: 375px){
+	.text__full-time{
+		max-width: 343px;
+		margin: 0px auto;
+		flex-direction: column;
+	}
+	.title__full-time {
+		max-width: 343px;
+		p{
+			font-family: Red Hat Display;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 23px;
+			line-height: 166%;
+			letter-spacing: 0.1em;
+			color: #000000;
+			padding-bottom: 28px;
+		}
+		img{
+			margin-bottom: 48px;
+		}
+	}
+	.all__inform {
+		max-width: 343px;
+		p{
+			font-family: Lato;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 19px;
+			line-height: 32px;
+			letter-spacing: 0.05em;
+			color: #565656;
+			padding-bottom: 48px;
+		}
+	}
+
+}
 /*----------Latert Posts------------*/
 
 .block__latest-posts {
@@ -295,10 +448,12 @@ p{
 	}
 }
 
+
+//////-----adapt----/////
+
 @media (max-width: 320px){
 	.block__latest-posts__title{
 		display:block;
-		// padding-bottom: 48px;
 	}
 	.container__info-card{
 		display:block;
@@ -318,8 +473,98 @@ p{
 	}
 }
 
+@media (max-width: 1024px){
+	.block__latest-posts__title{
+		padding-right: 16px;
+	}
+	.container__info-card{
+		// display:block;
+		max-width: 992px;
+		
+	}
+	.block__all{
+		max-width: 992px;
+		img{
+			max-width: 330px;
+		}
+	}
+	.profecy__date{
+		display: block;
+	}
+	.block__info-card{
+		margin-top: 48px;
+	}
+}
 
-.block__all-image img{
-	width: 100%;
-	object-fit: cover;
+@media (max-width: 768px){
+	.block__latest-posts__title{
+		padding-right: 16px;
+	}
+	.container__info-card{
+		display:block;
+		max-width: 736px;
+		margin-left:30%;
+		
+	}
+	.block__all{
+		max-width: 736px;
+		img{
+			max-width: 330px;
+		}
+	}
+	.profecy__date{
+		display: block;
+	}
+	.block__info-card{
+		margin-top: 48px;
+	}
+}
+
+@media (max-width: 425px){
+	.block__latest-posts__title{
+		padding-right: 16px;
+	}
+	.container__info-card{
+		display:block;
+		max-width: 393px;
+		margin-left:8%;
+		
+	}
+	.block__all{
+		max-width: 736px;
+		img{
+			max-width: 330px;
+		}
+	}
+	.profecy__date{
+		display: block;
+	}
+	.block__info-card{
+		margin-top: 48px;
+	}
+}
+
+
+@media (max-width: 375px){
+	.block__latest-posts__title{
+		padding-right: 16px;
+	}
+	.container__info-card{
+		display:block;
+		max-width: 342px;
+		margin-left:2%;
+		
+	}
+	.block__all{
+		max-width: 736px;
+		img{
+			max-width: 330px;
+		}
+	}
+	.profecy__date{
+		display: block;
+	}
+	.block__info-card{
+		margin-top: 48px;
+	}
 }
