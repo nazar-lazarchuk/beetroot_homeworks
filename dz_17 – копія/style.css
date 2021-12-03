@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Quicksand:wght@500&family=Roboto&display=swap");
+body {
+  margin: 0;
+  margin: 0;
+}
+
+.content {
+  margin: 38px 126px 0 155px;
+  font-style: normal;
+}
+
+/*---------HEADER------*/
+header {
+  display: flex;
+  vertical-align: middle;
+}
+.title {
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 35px;
+}
+.header__title {
+  margin: 0 0 0 14px;
+}
+
+/*--------MAIN--------*/
+main {
+  margin: 100px 0 0 0;
+}
+.main__subtitle {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #7690a8;
+
+  margin: 0;
+}
+.main__title {
+  font-family: "Nunito Sans";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.2px;
+
+  color: #16133d;
+  margin: 17px 0 0 0;
+}
+
+/*--------MAIN BOX-----------*/
+.main__boxes {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1158px;
+
+  margin: 35px 0 69px 0;
+}
+.box {
+  max-width: 360px;
+  max-height: 347px;
+  border: 1px solid #e5eaf4;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  padding: 40px 45px 46px 41px;
+}
+.box:hover {
+  border: 1px solid lightgreen;
+}
+
+.box__image {
+  width: 64px;
+  height: 50px;
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+.box__title {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 21px;
+
+  margin: 28px 0 0 0;
+}
+.box__paragraph {
+  margin: 14px 0 29px 0;
+}
+.box__paragraph,
+.box__ref {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+a {
+  text-decoration: none;
+  color: #16133d;
+}
+.box__ref {
+  margin: 29px 0 46px 0;
+}
+
+/*-----FOOTER----*/
+footer {
+  width: 1359px;
+  height: 194px;
+  background: #16133d;
+
+  padding: 36px 0 0 160px;
+}
+.footer__title {
+  color: white;
+
+  margin: 0 0 0 14px;
+}
+.content_top {
+  display: flex;
+
+  margin: 0 0 40px 0;
+}
+.footer_icons {
+  margin: 0 0 45px 0;
+}
+.social_networks {
+  margin: 0 0 8px 0;
+}
+.social_networks:hover path {
+  fill: #3db370;
+}
