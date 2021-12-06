@@ -78,6 +78,8 @@ body {
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .title__info .prof__title {
@@ -505,8 +507,7 @@ body {
   }
 }
 .form__input._error {
-  -webkit-box-shadow: 0 0 15px red;
-          box-shadow: 0 0 15px red;
+  border-color: red;
 }
 
 .form {

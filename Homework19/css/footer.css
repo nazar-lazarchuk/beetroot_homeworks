@@ -30,7 +30,7 @@
   color: #000000;
   margin-bottom: 32px;
 }
-.contact__info p {
+.contact__info a {
   font-family: Lato;
   font-style: normal;
   font-weight: normal;

@@ -27,6 +27,8 @@ body {
 	max-width: 1440px;
 	height: 100%;
 	margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 @import url(/css/header.css);
@@ -455,7 +457,7 @@ body {
 
 
 .form__input._error{
-    box-shadow: 0 0 15px red;
+    border-color: red;
 }
 .form {
     max-width: 1120px;
