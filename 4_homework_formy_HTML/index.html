@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Анкета відвідувача ресторану</h1>
+  <form method="post" action="/signup">
+    <!-- Контактна інформація -->
+    <fieldset>
+      <legend>Контактна інформація</legend>
+      <label>Ім'я
+        <input type="text" name="Поле Ім'я" style="margin-left:130px;" required>
+      </label>
+      <br>
+      <br>
+      <label>
+        Телефон &#9990; <input type="tel" name="поле телефон" style="margin-left:80px;" required>
+      </label>
+      <br>
+      <br>
+      <label>
+        Email &#128386;<input type="email" name="поле email" style="margin-left:100px;">
+      </label>
+      <br>
+      <br>
+      <label>
+        Дата відвідування &nbsp;<input type="date" name="поле дата" style="margin-left:30px;" required>
+      </label>
+    </fieldset>
+    <br>
+    <br>
+    <!-- Персональна інформація -->
+    <fieldset>
+      <legend>Персональна інформація</legend>
+      <label>Вік
+        <input type="number" min="6" max="120" step="1" name="Поле Ім'я" style="margin-left:140px;" required>
+      </label>
+      <br>
+      <br>
+      Улюблена кухня
+      <select style="margin-left:50px;">
+        <option value="">Українська</option>
+        <option value="">Грузинська</option>
+        <option value="">Турецька</option>
+        <option value="">Азербайджанська</option>
+      </select>
+      <br>
+      <br>
+      <br>
+      <br>
+      <label>
+        Які блюда Ви хотіли б<br>побачити в меню
+        <textarea placeholder="message" name="message" rows="5" style="margin:0 0 0 45px;"></textarea>
+      </label>
+      <br>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+      <!-- Оцінка закладу -->
+      <legend>Оцінка нашого закладу</legend>
+      <p><b>Чому ви вибрали наш заклад?</b></p>
+      <label>
+        <input type="radio"  value="cause_of_choise" name="question-1">
+        Не далеко від дому/роботи</label>
+      <br>
+      <br>
+      <label>
+        <input type="radio"  value="cause_of_choise" name="question-1">
+        Побачив рекламу</label>
+      <br>
+      <br>
+      <label>
+        <input type="radio" value="cause_of_choise" name="question-1">
+        Порадили</label>
+      <br>
+      <br>
+      <label>
+        <input type="radio" value="cause_of_choise" name="question-1">
+        Оптимальне відношення ціни і якості
+      </label>
+      <p><b>Ви будете рекомендувати наш заклад вашим знайомим?</b></p>
+      <label>
+        <input type="radio" name="question-2">
+        да</label>
+      <br>
+      <br>
+      <label>
+        <input type="radio" name="question-2">
+        ні</label>
+    </fieldset>
+    <br>
+    <input type="submit" value="Відправити">
+  </form>
+</body>
+
+</html>
