@@ -15,9 +15,9 @@ h2{
 
 /* Шапка профиля */
 #home{
-display: block;
-width: 940px;
-margin: 0 auto;
+    display: block;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .line{
@@ -28,10 +28,10 @@ margin: 0 auto;
 }
 
 .navigation{
-padding: 0px 20px;
-text-decoration: none;
-color: #828282;
-font-size: 18px;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
 }
 
 .navigation:hover{
@@ -67,9 +67,9 @@ aside p{
 /* Skills */
 
 .icon_skills{
-display: flex;
-justify-content: space-around;
-margin: 83px 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 83px 200px;
 }
 
 h3{
@@ -106,7 +106,7 @@ footer p{
 }
 
 form{
-padding-bottom: 30px;
+    padding-bottom: 30px;
 } 
 button{
     border-radius: 50px;
