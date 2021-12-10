@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  margin: 0 40px 0 90px;
+  font-family: "Roboto";
+}
+/*-------header------*/
+header {
+  margin: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.language {
+  margin-right: 41px;
+  font-weight: 900;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+/*-------------main-------------------*/
+
+.information__title {
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.header {
+  font-weight: 400;
+}
+.strong_header {
+  font-weight: 900;
+}
+sup {
+  font-size: 20.988px;
+  line-height: 25px;
+  margin-right: 10px;
+}
+
+.information__paragraph {
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+.information__link {
+  color: #000;
+  text-decoration: underline;
+}
+
+strong {
+  background-color: #eee;
+  font-weight: 400;
+}
