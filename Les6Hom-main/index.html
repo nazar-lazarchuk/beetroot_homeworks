@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+	<form class="Anketa">
+		<h1>Анкета поситителя ресторана</h1>
+		<fieldset class="block_Contact_Information">
+			<legend class="Contact_Information">Контактная информация</legend>
+			<p>
+				<label for="name">Имя <em>*</em></label>
+				<input class="text_box" type="text" id="name" required>
+			</p>
+    		<p>
+				<label>Телефон (в формате +380) name <em>*</em></label>
+				<input class="text_box" type="tel" required pattern="+380[0-9]{3}-[0-9]{3}">
+			</p>
+    		<p>
+				<label for="email">E-mail <em>*</em></label>
+				<input class="text_box" type="email" id="email" required>
+			</p>
+			<p>
+				<label for="name">Дата посещения </label>
+				<input type="date" name="date">
+			</p>
+		</fieldset>
+		<fieldset class="block_Personal_Information">
+			<legend class="Personal_Information">Персональная информация</legend>
+			<p>
+				<label >Возраст</label>
+				<input type="number" min="1" max="100" step="1" >
+			</p>
+			<p>
+				<label for="name">Любимая кухня</label>
+				<select>
+					<option value="#" selected>Украинская</option>
+					<option value="#">Русская</option>
+					<option value="#">Грузинская</option>
+				</select>
+			</p>
+			<label  class="form__label">Какие блюда Вы хотели бы <br> увидеть в меню?</label>
+			<textarea name="message"  class="form__input"></textarea>
+		</fieldset>
+		<div class="block_grade">
+			<fieldset class="grade">
+				<legend>Оценка нашего заведения</legend>
+				<p>Почему Вы выбрали наше заведение?</p>
+				<div class="radio">
+					<input  type="radio" value="#" name="#">
+					<label >Недалеко от дома</label>
+				</div>
+				<div class="radio">
+					<input  type="radio"  value="#" name="#">
+					<label >Увидел рекламу</label>
+				</div>
+				<div class="radio">
+					<input  type="radio"  value="#" name="#">
+					<label >Посоветовали</label>
+				</div>
+				<div class="radio">
+					<input  type="radio"  value="#" name="#">
+					<label >Оптимальное соотношение цены и качества</label>
+				</div>
+				<div>
+					<p> Вы будете рекомендовать наше заведение своим знакомым?</p>
+					<div class="radio">
+						<input type="radio"  value="1" name="1">
+						<label >Да</label>
+					</div>
+					<div class="radio">
+						<input  type="radio"  value="1" name="1">
+						<label >нет</label>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		<input class="input_button" type="submit" value="Отправить" >
+	</form>
+  </body>
+</html>
+

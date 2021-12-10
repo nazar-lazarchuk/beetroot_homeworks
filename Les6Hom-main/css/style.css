@@ -1,0 +1,97 @@
+/* Обнуление */
+ /* *{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+* :focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;} 
+ul li{list-style:none;} 
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;} */
+/*-------------------- */
+
+.Anketa {
+    margin: 0 auto;
+    width: 500px;
+}
+.block_Contact_Information {
+   clear:both;
+   text-align:right;
+   border-radius: 5px;
+   background-color: rgb(243, 235, 243);
+}
+.Contact_Information{
+    text-align: left;
+}
+.block_Contact_Information label {
+    float:left;
+}
+input[type=date]{
+    width: 170px;  
+    height: 21px;
+}
+.Contact_Information {
+}
+.block_Personal_Information {
+    border-radius: 5px;
+    clear:both; 
+    text-align:right;
+    background-color: rgb(243, 235, 243);
+}
+.block_Personal_Information label{
+    text-align: left;
+    float:left;
+}
+input[type=number]{
+    width: 170px;
+} 
+.Personal_Information{
+    text-align: left;
+}
+
+.Personal_Information {
+}
+.form__label {
+}
+.form__input {
+}
+.block_grade {
+}
+.grade{
+    background-color: rgb(243, 235, 243);
+    border-radius: 5px;
+}
+.grade label{
+    border-radius: 5px;
+    
+}
+.radio {
+}
+.footer_button {
+    margin: 0 auto;
+    width: 500px;
+}
+.input_button{
+    width: 100px;  
+    height: 40px;
+    background-color: cyan;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+
+ input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+
