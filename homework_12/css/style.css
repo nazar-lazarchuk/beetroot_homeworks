@@ -1,0 +1,95 @@
+
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+ 
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+html,
+body {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+/*--------------------*/
+
+body{
+   font-family: 'Inter', sans-serif;
+}
+
+
+.container{
+   margin: 80px auto; 
+}
+
+.table{
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.table .table__row:nth-child(odd){
+   background-color: #F4F7FC;
+}
+
+.table__row:first-of-type{
+   text-align: left;
+}
+
+th{
+   color: #606F89;
+   font-size: 12px;
+   line-height: 15px;
+   padding: 15px 0;
+}
+
+td{
+   color: #2E3B52;
+   font-size: 14px;
+   line-height: 17px;
+   padding: 12px 0;
+}
+
+td:first-child, th:first-child{
+   text-align: center;
+   padding: 13px 20px;
+}
+
+
+.nomber-style{
+   color: #606F89;
+   font-size: 12px;
+   line-height: 15px;
+   font-weight: 400;
+}
+
+.table__row p{
+   max-width: 197px;
+}
+
+
+.btn{
+   font-size: 10px;
+   font-weight: 500;
+   height: 20px;
+   border-radius: 11px;
+   padding: 4px 5px; 
+}
+
+.btn-active{
+   background-color: #0A65FF;
+   color: #FFFFFF;
+}
+
+.btn-inactive{
+   background-color: white;
+   color: #606F89;
+   border: 1px solid #606F89;
+}
