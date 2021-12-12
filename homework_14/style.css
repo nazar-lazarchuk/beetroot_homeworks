@@ -9,9 +9,9 @@ body {
     width: 1920px;
     height: 2900px;
     font-family: "Roboto", sans-serif;
-    font-size: 42px;
+    font-size: 45px;
     line-height: 50px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
@@ -32,6 +32,7 @@ body {
     line-height: 30px;
     color: grey;
     position: absolute;
+    /* background: chartreuse; */
 }
 
 .header_box {
@@ -73,7 +74,7 @@ body {
     margin-left: 1140px;
     font-style: normal;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 60px;
     line-height: 55px;
     font-stretch: ultra-condensed;
     letter-spacing: 0.01em;
@@ -93,7 +94,7 @@ body {
 
 .T_label {
     width: 25px;
-    height: 55px;
+    height: 60px;
     margin-top: 0;
     margin-left: 3px;
     font-style: normal;
