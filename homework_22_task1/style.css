@@ -1,0 +1,213 @@
+html,
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: #000000;
+}
+
+.main-container {
+    width: 1600px;
+    height: 1400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #e2e7ec;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    width: 1120px;
+    height: 1100px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.first-picture {
+    grid-column: 1/3;
+    height: 540px;
+    background-image: url(/img/landscape_main_car.svg);
+    position: relative;
+}
+
+/* .gradient {
+    position: absolute;
+    z-index: 0;
+    margin-top: 0px;
+    width: 740px;
+    height: 540px;
+    background: linear-gradient(to top, #0a0908 35%, #c2c2c6 40%, #374255 80%);
+    opacity: 0.3;
+} */
+
+.data-item1 {
+    grid-column: 1/3;
+    height: 20px;
+    width: 160px;
+    margin-left: 45px;
+    margin-top: 400px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.description-item1 {
+    grid-column: 1/3;
+    height: 65px;
+    width: 455px;
+    margin-left: 45px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    color: #ffffff;
+    font-family: inherit;
+}
+
+.second-picture--grid {
+    display: grid;
+    height: 540px;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px 1fr;
+    gap: 0px 0px;
+    background-color: #ffffff;
+}
+
+.internal-item2 {
+    grid-column: 1/1;
+    background-image: url(/img/landscape_woman.svg);
+}
+
+.leveling-data {
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 20;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #818181;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.leveling {
+    height: 90px;
+    width: 320px;
+    margin-left: 30px;
+    margin-bottom: 70px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+    font-family: inherit;
+}
+
+.circle_foto {
+    height: 55px;
+    width: 55px;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+
+.third-picture--grid {
+    display: grid;
+    height: 540px;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 1fr;
+    gap: 0px 0px;
+    background-color: #ffffff;
+}
+
+.internal-item3 {
+    grid-column: 1/2;
+    background-image: url(/img/landscape_girls.svg);
+}
+
+.forth-picture--grid {
+    display: grid;
+    height: 540px;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 1fr;
+    gap: 0px 0px;
+    background-color: #ffffff;
+}
+
+.internal-item4 {
+    grid-column: 1/2;
+    background-image: url(/img/landscape_boots.svg);
+}
+
+.fifth-picture--grid {
+    display: grid;
+    height: 540px;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 1fr;
+    gap: 0px 0px;
+    background-color: #ffffff;
+}
+
+.internal-item5 {
+    grid-column: 1/2;
+    background-image: url(/img/landscape_small_car.svg);
+}
+
+.loader {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    width: 210px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+.loader-circle {
+    border: 9px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 9px solid #99a5b0;
+    border-bottom: 9px solid #99a5b0;
+    width: 18px;
+    height: 18px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-text {
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 34px;
+    color: #99a5b0;
+    font-family: "Hans Kendrick";
+}
