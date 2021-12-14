@@ -1,0 +1,161 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  font-family: "Mulish", sans-serif;
+}
+
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  padding-top: 55px;
+  height: 150px;
+}
+
+.logo-genesis {
+  width: 90px;
+  height: 19px;
+  border-radius: 2px;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #111111;
+  font-weight: 700;
+}
+
+.links a:nth-child(2) {
+  margin-left: 28px;
+}
+
+/* main grid */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 660px 100px 400px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "a a b"
+    "c c c"
+    "d d d"
+    "e f g";
+  grid-gap: 30px;
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}
+
+.agenda {
+  width: 585px;
+}
+
+.agenda h1 {
+  font-size: 40px;
+  line-height: 55px;
+  color: #111111;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #585858;
+}
+
+.project-descr {
+  width: 335px;
+  margin-left: auto;
+}
+
+table {
+  width: 335px;
+  border: none;
+  border-collapse: collapse;
+}
+
+tr {
+  width: 137px;
+}
+
+td {
+  height: 59px;
+  font-size: 18px;
+  color: #888;
+  font-weight: 700;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.t_field-name {
+  width: 137px;
+}
+
+.t_field-descr {
+  color: black;
+  font-weight: 700;
+}
+
+/* footer */
+
+footer {
+  height: 155px;
+  padding-bottom: 45px;
+  align-items: flex-end;
+}
+
+.footer-block {
+  width: 352px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  height: 15px;
+  text-decoration: none;
+}
+
+.socials:nth-child(2) {
+  margin-left: 24px;
+}
+
+.socials:nth-child(3) {
+  margin-left: 23px;
+}
