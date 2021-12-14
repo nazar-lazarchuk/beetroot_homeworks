@@ -1,0 +1,176 @@
+body, html {
+    max-width: 1401px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 25px auto 50px;
+    align-items: center;
+}
+.header-menu {
+    display: flex;
+    list-style: none;
+    margin-left: 250px;
+}
+.header-menu__text {
+    margin: 0 20px;
+
+}
+.button-sign-in {
+    font-size: 16px;
+    font-weight: 600;
+    color:#173A56;
+    width: 102px;
+    height: 46px;
+    background-color:#fff;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+}
+.button-sign-up {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    width: 110px;
+    height: 46px;
+    background-color:#FF9900;
+    border: none;
+    border-radius: 4px;
+}
+.section-first {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-first__topic {
+    max-width: 518px;
+    font-size: 44px;
+    font-weight: 700;
+    color: #2F281E;
+    margin-bottom: 30px;
+}
+.section-first__paragraph {
+    margin-bottom: 45px;
+    max-width: 458px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #544837;
+}
+.section-first__get-started-btn {
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 175px;
+    height: 53px;
+    background-color:#FF9900;
+    border: none;
+    border-radius: 4px; 
+}
+.section-first__watch-video-btn_pos {
+    position: relative;
+    top: 4px;
+    right: 8px;
+}
+.section-first__watch-video-btn {
+    color: #FF9900;
+    font-size: 16px;
+    font-weight: 600;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 54px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2F281E;
+}
+h3 { 
+    font-size: 22px;
+    font-weight: 600;
+    color: #2F281E;
+}
+p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #544837;
+}
+.four__tools {
+    display: flex;
+    justify-content: space-between;
+   flex-direction: row;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.box__size {
+    width: 240px;
+    height: 178px;
+}
+.img-style {
+    border-radius: 19px;
+}
+.three-rows {
+    height: 204px;
+}
+article {
+    text-align: center;
+    margin-top: 35px;
+}
+.sign_up-btn { 
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 175px;
+    height: 53px;
+    background-color:#FF9900;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.productly-logo { 
+    position: relative;
+    top: 4px;
+}
+.footer-menu {
+    margin-top: 50px;
+}
+.footer-menu__text {
+   list-style: none;
+   font-size: 16px;
+   font-weight: 400;
+   color: #544837;
+   margin: 10px;
+}
+.footer__sign-up {
+    margin-top: 100px;
+}
+.footer__sign-up_border {
+    border-style: none;
+    border: 1px solid #BCD0E5 ;
+    border-radius: 4px;
+    padding: 0px;
+    width: 325px;
+    height: 46px;
+    font-size: 25px;
+}
+
+.footer__button {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 131px;
+    height: 39px;
+    background-color:#FF9900;
+    border: none;
+    border-radius: 4px;
+}
+
