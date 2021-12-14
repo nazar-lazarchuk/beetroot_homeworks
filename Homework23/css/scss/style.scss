@@ -1,0 +1,106 @@
+@import "_normalize.scss";
+
+.karkastnus-blok {
+    margin: 20px;
+    position: relative;
+    display: grid;
+    gap: 10px;
+    column-gap: 0px;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  
+  .card img {
+    width: 340px;
+    height: 480px;
+    object-fit: cover;
+  }
+
+.card{
+    width: 340px;
+    height: 480px;
+}
+
+.front,
+.back{
+    width: 340px;
+    height: 480px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .5s linear;
+    
+}
+
+
+
+.front{
+  transform: perspective(600px) rotateY(0deg);
+   
+}
+
+// @keyframes anim {
+//   0% {
+//     transform: perspective(600px) rotateY(-180deg);
+//   }
+//   50% {
+//     transform: perspective(600px) rotateY(0deg);
+//   }
+//   100% {
+//     transform: perspective(600px) rotateY(-180deg);
+//   }
+// }
+
+.back{
+    transform: perspective(600px) rotateY(-180deg);
+    background-color: #f1f1f1;
+    border: 4px solid black;
+    border-radius: 5px;
+    animation: anim linear 6s infinite;
+}
+
+
+span{
+    display: block;
+    font-size: 20px;
+}
+
+
+
+.card:hover > .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+    
+}
+
+
+.left__corner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  text-align: center;
+  padding-top: 15px;
+}
+.center__logo{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(180deg);
+}
+.right__corner{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  text-align: center;
+  padding-bottom: 15px;
+  span{
+    transform: rotate(180deg);
+   }
+}
