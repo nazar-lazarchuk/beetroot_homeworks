@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <form action="#" method="get" class="form__wrapper">
+      <fieldset class="form__border-style">
+         <div class="inner__container">
+            <h1>Create an Account</h1>
+            <div class="form__first-section ">
+               <label>
+                  <p>First Name:</p>
+                  <input class="input--style" type="text" maxlength="50" name="First Name:" required>
+               </label>
+
+               <label>
+                  <p>Last Name:</p>
+                  <input class="input--style" type="text" maxlength="50" name="Last Name:" required>
+               </label>
+
+               <label>
+                  <p>E-mail address:</p>
+                  <input class="input--style" type="email" name="E-mail:" maxlength="255" required>
+               </label>
+            </div>
+
+            <div class="form__second-section ">
+               <label><input class="style--radio" type="radio" name="Gender" value="Male">Male</label>
+               <label><input class="style--radio" type="radio" name="Gender" value="Female">Female</label>
+            </div>
+
+            <div class="form__third-section ">
+               <label>
+                  <p>Country:</p>
+                  <select name="Country" class="input--style">
+                     <option value="Ukraine">Ukraine</option>
+                     <option value="Bulgaria">Bulgaria</option>
+                     <option value="Poland">Poland</option>
+                     <option value="Spain">Spain</option>
+                     <option value="France">France</option>
+                  </select>
+               </label>
+               <label>
+                  <p>City</p>
+                  <input class="input--style" type="text" name="City">
+               </label>
+            </div>
+
+            <div class="btn"><button type="submit">Send</button></div>
+            <div class="form__fifth-section ">
+               <p>
+                  By clicking the 'Sign Up' button, you confirm that you accept our
+                  <a href="#">Terms of Use</a>
+                  and
+                  <a href="#">Privacy Policy</a>.
+               </p>
+               <p>
+                  Have an account?
+                  <a href="#">Log In</a>
+               </p>
+            </div>
+
+         </div>
+      </fieldset>
+   </form>
+
+</body>
+
+</html>
