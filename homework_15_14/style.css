@@ -1,0 +1,169 @@
+
+html, body{
+   margin: 0;
+   padding: 0;
+}
+
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:focus,a:active {outline: none;}
+
+body{
+   font-family: 'Roboto', sans-serif;
+}
+
+.black--line{
+   width: 48px;
+   height: 3px;
+}
+
+.font--img{
+   height: 400px;
+   width: 400px;
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+   z-index: -1;
+}
+
+.container{
+   width: 100%;
+   max-width: 1920px;
+  
+   box-sizing: border-box;
+   margin: 0 auto;
+
+}
+
+/*-------------- header--------------- */
+.block-header{
+   display: flex;
+   justify-content:space-between;
+   
+   padding: 22px 40px ;
+   background-color: #FFFFFF;
+  
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+
+.nav{
+   position: relative;
+   top: 15px;
+}
+.nav a{
+   font-size: 20px;
+   color: #000000;
+   font-weight: 400;
+   
+}
+
+.nav__lang{
+   font-weight: 900;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 1px #000000;
+   padding-right: 41px;
+}
+
+
+/* ----------content------------------ */
+.content{
+   height: 470px;
+   overflow-y: scroll;
+   display: flex;
+   justify-content: space-between;
+   padding: 32px 40px 0 40px;
+}
+
+
+/* sidebar */
+.content__sidebar{
+   display: flex;
+   flex-direction: column;
+   min-width: 300px;
+   background-color: #FFFFFF;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+
+.content__sidebar a{
+   font-size: 18px;
+   color: #000000;
+   font-weight: 900;
+   padding-bottom: 32px;
+   
+}
+
+
+/* info */
+.content__info{
+   background-image: url(../img/gear.svg); 
+   background-position: right bottom; 
+   background-repeat: no-repeat;
+}
+
+.content__info p{
+   font-size: 18px;
+   text-align: justify;
+   
+}
+
+/* 2 page element */
+
+.block-element{
+   display: flex;
+   padding: 22px 40px 0px 40px;
+  
+   border-bottom: 1px solid #BFBFBF;
+}
+
+.block-element img{
+   position: relative;
+   top: 15px;
+
+   height: 5px;
+
+   padding-right: 20px;
+}
+
+.block-element p{
+   font-size: 30px;
+   margin: 0;
+}
+
+.block-icons{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 22px 40px;
+}
+
+.icons_style{
+   width: 440px;
+   height: 280px;
+   background-color: #E6E6E6;
+   border-radius: 5px;
+   margin: 26px;
+  
+   
+}
+
+.icons_style img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   top: 80px;
+   width: 200px;
+   
+
+}
+
+.icons_style:hover{
+   background-color: black;
+   transform: scale(0.7);
+ 
+
+}
+
