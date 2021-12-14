@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+  </head>
+  <body>
+    <main>
+      <h2 class="title">Create an Account</h2>
+      <form action="#" method="get" class="form-block">
+        <div class="standart-form">
+          <label class="form-label">
+            <span class="text">First Name</span>
+            <br />
+            <input
+              type="text"
+              name="first_name"
+              class="input-form input-form__small"
+              maxlength="50"
+              required
+            />
+          </label>
+          <label class="form-label">
+            <span class="text">Last Name</span>
+            <br />
+            <input
+              type="text"
+              name="last_name"
+              class="input-form"
+              maxlength="50"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label class="form-label">
+            <span class="text">E-mail</span>
+            <br />
+            <input
+              type="email"
+              name="email_name"
+              class="input-form input-form__long"
+              maxlength="50"
+              required
+            />
+          </label>
+          <span class="text" style="opacity: 0.5"
+            >Well never share your email with anyone else.</span
+          >
+        </div>
+
+        <div class="gender-form">
+          <div class="gender-form__input form-label">
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              class="gender-form__input"
+              id="male"
+              required
+            />
+            <label for="male"><span class="text">Male</span></label>
+          </div>
+          <div class="gender-form__input form-label">
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              class="gender-form__input"
+              id="female"
+              required
+            />
+            <label for="female" class="form-label">
+              <span class="text">Female</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="standart-form">
+          <label class="form-label">
+            <span class="text">Country</span>
+            <br />
+            <span class="select-form">
+              <select name="country" class="input-form__select">
+                <option value="0" style="display: none" selected>Select</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Romania">Romania</option>
+                <option value="Poland">Poland</option>
+                <option value="Slovakia">Slovakia</option>
+              </select>
+            </span>
+          </label>
+
+          <label class="form-label">
+            <span class="text">City</span>
+            <br />
+            <input
+              type="text"
+              name="city"
+              maxlength="50"
+              class="input-form input-form__small"
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            name="text"
+            maxlength="255"
+            class="input-form input-form__long"
+          />
+        </div>
+
+        <div class="footer-block">
+          <span class="text"
+            >By clicking the 'Sign Up' button, you confirm that you accept
+            our</span
+          >
+          <a href="#"><span class="text">Terms of Use</span></a> and
+          <a href="#"><span class="text">Privacy Policy</span></a
+          >.
+        </div>
+        <hr />
+        <div class="footer-block">
+          <span class="text">Have an account?</span>
+          <a href="#"><span class="text">Log In</span></a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
