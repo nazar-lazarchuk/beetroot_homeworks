@@ -1,0 +1,33 @@
+
+ 
+  .side {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .side img {
+    height: 30px;
+    width: auto;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+  }
+  .side--rotated180 {
+    transform: rotate(180deg);
+  }
+  .red {
+    color: red;
+    
+
+  }
+  
