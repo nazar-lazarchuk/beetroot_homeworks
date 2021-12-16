@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 865" width="1500" height="865">
+	<title>foodter</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="foodter">
+		<path id="bg" class="shp0" d="M0 0L1500 0L1500 866L0 866L0 0Z" />
+	</g>
+</svg>
