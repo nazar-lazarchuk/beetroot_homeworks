@@ -1,0 +1,32 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  /*-- font-family: 'Pacifico', cursive; --*/
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button.button_standart {
+  width: 200px;
+  height: 54px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Raleway";
+  -webkit-filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+  border: 0;
+}
+/*# sourceMappingURL=style.css.map */
