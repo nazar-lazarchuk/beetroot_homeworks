@@ -1,0 +1,87 @@
+body{
+    padding:0;
+    margin:0;
+
+    background-color: $bg-color ;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1120px;
+    padding: 0 20px;
+    background-color: $bg-color;
+}
+
+.header{
+    margin-top: 73px;
+    text-align: left;
+    max-width: 260px;
+    &__subtitle{
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5em;
+    color: $main-color;
+    }
+}
+.main{
+    margin-top: 48px;
+    margin: 48px 30px 170px 0;
+    &__title{
+        font-family: "Red Hat Display";
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.05em;
+        color: $main-color;
+    }
+    &__subtitle{
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $main-color;
+
+        margin: 133px 0 50px 0;
+    }
+    &__paragraph{
+        font-family: "Lato";
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: $additional-color;
+    }
+    &__main__img{
+        margin-bottom: 50px;
+        margin-right: 30px;
+    }
+}
+.second-image{
+    margin-top: 64px;
+}
+.paragraph--small{
+    max-width: 544px;
+}
+
+
+
+@media(max-width: 1024px){
+    .wrapper{
+        margin: 0 auto;
+        padding-right: 30px;
+    }
+    .main__subtitle{
+        margin: 46px 0 64px 0;
+    }
+    .main__img{
+        max-width: 734px;
+    }
+}
+@media(max-width: 360px){
+    .main__subtitle{
+        margin: 48px 0 56px 0;
+    }
+    .main__img{
+        max-width: 288px;
+    }
+}
