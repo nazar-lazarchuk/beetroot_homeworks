@@ -1,0 +1,64 @@
+body{
+    color:rgb(3, 3, 58);
+    font-family: "Roboto";
+
+    background-color: #eee;
+
+    width: 100%;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 600px;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 50px;
+
+    margin-bottom: 40px;
+}
+.back_image{
+    max-height: 350px;
+    max-width: 200px;
+}
+
+.cards{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 300px 40px; 
+    grid-template-areas: 
+      "cards__first cards__second cards__third"
+      "cards__fourth cards__fiveth cards__sixth"; 
+  }
+  .cards__first { grid-area: cards__first; }
+  .cards__second { grid-area: cards__second; }
+  .cards__third\\ { grid-area: cards__third; }
+  .cards__fourth { grid-area: cards__fourth; }
+  .cards__fiveth { grid-area: cards__fiveth; }
+  .cards__sixth { grid-area: cards__sixth; }
+
+.card-front__img,
+.card-back__img{
+    overflow:hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;   
+}
+.card-back__img{
+    transform: perspective(600px) rotateY(180deg);
+    background-color: white;
+    transition: transform .6s linear;
+}
+.card-item:hover > .card-front__img{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card-item:hover > .card-back__img{
+    transform: perspective(600px) rotateY(0deg);
+}  
+.card-front__img{
+    transform: perspective(600px) rotate(0deg);
+}
