@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title></title>
+	</head>
+	<body>
+		<div id="data__result">
+			<p class="result">
+				Площа окружності
+				<span id="result__radius"></span>
+			</p>
+			<p class="result">
+				Швидкість
+				<span id="result__spead"></span>
+			</p>
+			<p class="result">
+				Валюта (євро)
+				<span id="result__valuta"></span>
+			</p>
+		</div>
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+			<label for=""  class="сircle__radius">
+				<p>Який радіус кола ?</p>
+				<input type="text" id="radius">
+			</label>
+			<label for="" class="length">
+				<p>Яка відстань між Києвом та Житомиром ?</p>
+				<input type="text" id="distans">
+				<p>За скільки годин хочеш доїхати ?</p>
+				<input type="text" id="time">
+			</label>
+			<label for="" class="convector">
+				<p>Скільки грошей маєш ?(у долярах)</p>
+				<input type="text" id="valuta">
+			</label>
+			<button id="btn" class="btn__send" onclick="radius()">Send</button>
+		  </div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
