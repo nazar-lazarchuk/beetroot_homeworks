@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>JavaScript</title>
+	</head>
+	<body>
+		<h1>Гра вгадування чисел</h1>
+
+    <p>Ми вибрали випадкове число від 1 до 100. Подивіться, чи зможете ви вгадати його за 10 ходів або менше. Ми повідомимо вам, чи була ваша припущення занадто високою чи надто низькою.</p>
+
+    <div class="form">
+      <label for="guessField">Введіть припущення: </label>
+      <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Надішліть припущення" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
