@@ -1,0 +1,140 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background: #e5e5e5;
+    background: #3b3f45;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    background: #3b3f45;
+}
+
+header {
+    height: 82px;
+    background: #4a4f56;
+}
+
+.header-title {
+    height: 28px;
+    padding-top: 19px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #ff8984;
+}
+
+.title_mini {
+    height: 19px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: 0 auto;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: center;
+    color: #ff8984;
+}
+
+section {
+    margin-top: 0;
+    color: #ffffff;
+    background: #3b3f45;
+}
+
+.form-content {
+    max-width: 534px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #88839e;
+}
+
+form label {
+    display: block;
+    height: 45px;
+    text-align: left;
+    border-top: solid 3px #88839e;
+    border-bottom: solid 3px #88839e;
+}
+
+p {
+    display: inline;
+    height: 21px;
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+p span {
+    font-size: 11px;
+}
+
+form label:nth-child(even) {
+    background: #7a7593;
+    border-top: solid 3px #7a7593;
+    border-bottom: solid 3px #7a7593;
+}
+
+form label:hover {
+    background: #625e77;
+    cursor: pointer;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+}
+
+input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+    opacity: 0.3;
+    color: #ff8984;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 16px;
+    text-align: center;
+    background: white;
+}
+
+input[type="submit"] {
+    width: 534px;
+    height: 48px;
+    margin-top: 48px;
+    margin-bottom: 45px;
+    background: #4a4f56;
+    color: #ff8984;
+    font-size: 18px;
+    padding: 12px 0;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background: #7a7593;
+    color: white;
+}
+
+input[type="submit"]:active {
+    background: #ff8984;
+    color: white;
+}
