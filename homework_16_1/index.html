@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nunito+Sans:wght@600&family=Quicksand:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Account</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div>
+            <div class="main-box">
+                <div class="account-title">Create an Account</div>
+                <form
+                    action="#"
+                    name="login-form"
+                    method="get"
+                    class="login-form__items"
+                >
+                    <div class="form__flexbox-name">
+                        <div>
+                            <label class="form__name form__font">
+                                First Name
+                                <br />
+                                <input
+                                    class="form__name-input"
+                                    type="text"
+                                    name="first-name"
+                                    maxlength="60"
+                                    required
+                                />
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form__name form__font">
+                                Last Name
+                                <br />
+                                <input
+                                    class="form__name-input"
+                                    type="text"
+                                    name="last-name"
+                                    maxlength="60"
+                                    required
+                                />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__box-email">
+                        <label class="form__email form__font">
+                            Email
+                            <br />
+                            <input
+                                class="form__email-input"
+                                type="email"
+                                name="email"
+                                required
+                            />
+                        </label>
+                        <p class="form-promise">
+                            We'll never share your email with anyone else.
+                        </p>
+                    </div>
+
+                    <div class="gender__select">
+                        <div class="gender__select_input">
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="male"
+                                id="male"
+                                required
+                            />
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="gender__select_input">
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="female"
+                                id="female"
+                                required
+                            />
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="form__flexbox-place">
+                        <div>
+                            <label class="form__font">
+                                Country
+                                <br />
+                                <select
+                                    class="form__country-select"
+                                    name="country"
+                                >
+                                    <option
+                                        value="0"
+                                        style="display: none"
+                                        selected
+                                    >
+                                        Select
+                                    </option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="France">France</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form__font">
+                                City
+                                <br />
+                                <input
+                                    class="form__city-input"
+                                    type="text"
+                                    name="city"
+                                    maxlength="60"
+                                    required
+                                />
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="form__region" for="#">
+                            <input class="form__region-input" type="text" name="region" maxlength="80" required>
+                        </label>
+                    </div>
+                    <div class="form__licence">By clicking the 'Sign Up' button, you confirm that you accept our 
+                        <a class="form__licence-text" href="/Policy/licence.txt" target="_blank">Terms of Use</a>
+                        and
+                        <a class="form__licence-text" href="/Policy/private_policy.txt" target="_blank">Privacy Policy</a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="form__login form__font">Have an account?<a class="form__login-text" href="https://uk.wikipedia.org/wiki/Beetroot_AB" target="_blank">Log in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

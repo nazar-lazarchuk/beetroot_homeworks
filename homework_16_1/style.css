@@ -1,0 +1,252 @@
+html,
+body {
+    padding: 0;
+    margin: 0 auto;
+    background: #f2f2f2;
+}
+
+body {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 50px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    background: #f2f2f2;
+}
+
+.main-box {
+    height: 590px;
+    width: 540px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: #ffffff;
+    /* background-color: lightblue; */
+}
+
+.account-title {
+    height: 32px;
+    font-family: inherit;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #1c1c1c;
+}
+
+.form__flexbox-name {
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__name {
+    width: 245px;
+    height: 22px;
+    margin-bottom: 10px;
+}
+
+.form__font {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+
+.form__name-input {
+    width: 245px;
+    height: 38px;
+    margin-top: 7px;
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.form__name-input:hover {
+    border: 1px solid #007bff;
+}
+
+.form__box-email {
+    height: 92px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.form__email {
+    height: 22px;
+    margin-bottom: 10px;
+}
+
+.form__email-input {
+    width: 500px;
+    height: 38px;
+    margin-top: 7px;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #e4e4e4;
+    background: #ffffff;
+}
+
+.form__email-input:hover {
+    border: 1px solid #007bff;
+}
+
+.form-promise {
+    margin-top: 7px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+
+.gender__select {
+    display: flex;
+}
+
+.gender__select_input {
+    margin-right: 20px;
+}
+
+.gender__select_input input[type="radio"] {
+    display: none;
+}
+
+.gender__select_input label {
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #545454;
+}
+
+.gender__select_input label::before {
+    display: inline-block;
+    content: "";
+    cursor: pointer;
+    border: 1px solid #999;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.gender__select_input input[type="radio"]:checked + label::before {
+    background-color: #007bff;
+    background-image: radial-gradient(
+        circle closest-corner at 50% 50%,
+        #fff 30%,
+        #007bff 50%
+    );
+}
+
+.form__flexbox-place {
+    height: 67px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__country-select {
+    width: 245px;
+    height: 38px;
+    margin-top: 7px;
+    color: #969696;
+    background: #ffffff;
+    outline: none;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.form__country-select:hover {
+    border: 1px solid #007bff;
+}
+
+.form__city-input {
+    width: 245px;
+    height: 38px;
+    margin-top: 7px;
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.form__city-input:hover {
+    border: 1px solid #007bff;
+}
+
+.form__region {
+    height: 38px;
+    width: 500px;
+}
+
+.form__region-input {
+    width: 500px;
+    height: 38px;
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.form__region-input:hover {
+    border: 1px solid #007bff;
+}
+
+.form__licence {
+    height: 36px;
+    width: 410px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 22px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+
+.form__licence-text {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.line {
+    height: 0px;
+    margin-bottom: 20px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.form__login {
+    height: 36px;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.form__login-text {
+    color: #007bff;
+    font-weight: 700;
+}
