@@ -2,7 +2,6 @@
 
 let age = +prompt(`Enter here your age, please.`);
 
-exit:
 if (age > 0 && Number.isInteger(age)) {
     switch (true) {
         case (age <= 11):
@@ -19,12 +18,11 @@ if (age > 0 && Number.isInteger(age)) {
             break;
         case (age <= 1000):
             alert(`You are a liar. Reload the page and try again.`);
-            break exit;
+            break;
     }
 }
 else {
     alert(`A wrong age value. Reload the page and try again.`);
-    break exit;
 }
 
 // Point 2. Symbols
