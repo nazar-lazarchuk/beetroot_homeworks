@@ -2,7 +2,7 @@
 
 let input = +prompt(`Please, enter 5-digit integer.`);
 
-let palindromeNumber = function palindrome(x) {
+const PALINDROME_NUMBER = function isPalindrome(x) {
     if (x < 0) return false;
     if (x % 10 === 0) return false;
     if (x < 10) return true;
@@ -19,13 +19,8 @@ let palindromeNumber = function palindrome(x) {
     return x === rev || x === Math.trunc(rev / 10);
 }
 
-console.log(palindromeNumber(input));
-if (palindromeNumber(input) == true) {
-    alert(`This number is a palindrome.`);
-}
-if (palindromeNumber(input) == false) {
-    alert(`This number is not a palindrome.`);
-}
+console.log(PALINDROME_NUMBER(input));
+alert(PALINDROME_NUMBER(input) ? 'This number is a palindrome.' : 'This number is not a palindrome.');
 
 // Point 2. Discount
 
