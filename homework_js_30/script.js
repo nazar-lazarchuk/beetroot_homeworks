@@ -21,9 +21,9 @@ let numberPurchasedChocolates = Math.round(amountWallet / priceChocolate);
 let remainderMoney = Math.round(amountWallet - numberPurchasedChocolates * priceChocolate);
 alert(`Отже, ти можеш купити ${numberPurchasedChocolates} шоколадок, але при цьому в тебе залишиться ${remainderMoney} грн в гаманці`);
 
-let threeDigitNumber = prompt(`Будьласка, введи тризначне число `); //abc
+let threeDigitNumber = prompt(`Будьласка, введи тризначне число `); //abc - тризначне число
 let c = threeDigitNumber % 10;
 let b = ((threeDigitNumber - c) / 10) % 10;
 let a = Math.floor(threeDigitNumber / 100);
-alert(`${c}${b}${a}`)
+alert(`Ось тобі тризначне число задом наперед ${c}${b}${a}`)
 
