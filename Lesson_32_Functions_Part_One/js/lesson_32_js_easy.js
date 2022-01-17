@@ -68,12 +68,9 @@ alert(combinationResult);
 
 // Point 6. 
 
-function rectangleArea (x, y) {
-    if (y === NaN || y === undefined || y === null) {
-        y = x;
-    }
+function rectangleArea (x, y = x) { 
     return x * y;
 }
 
-let rectangleAreaResult = rectangleArea(8, 6);
+let rectangleAreaResult = rectangleArea(8, 2);
 alert(rectangleAreaResult);
