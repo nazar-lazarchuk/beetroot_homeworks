@@ -1,6 +1,6 @@
 //Мінімум
 let sumFirstTask = 0.1 + 0.2;
-alert(`Сума 0,1 і 0,2 дорівнює ${sumFirstTask}`);
+alert(`Сума 0,1 і 0,2 дорівнює ${sumFirstTask.toFixed(1)}`);
 
 let x = '1';
 let y = 2;
@@ -17,8 +17,8 @@ alert(`Отже, на флешку розміром ${memoryDrive} Гб помі
 //Норма
 let amountWallet = prompt(`Будьласка, вкажи суму грошей в гаманці в гривнях`);
 let priceChocolate = prompt(`Будьласка, вкажи ціну однієї шоколадки в гривнях`);
-let numberPurchasedChocolates = Math.round(amountWallet / priceChocolate);
-let remainderMoney = Math.round(amountWallet - numberPurchasedChocolates * priceChocolate);
+let numberPurchasedChocolates = Math.floor(amountWallet / priceChocolate);
+let remainderMoney = amountWallet % priceChocolate;
 alert(`Отже, ти можеш купити ${numberPurchasedChocolates} шоколадок, але при цьому в тебе залишиться ${remainderMoney} грн в гаманці`);
 
 let threeDigitNumber = prompt(`Будьласка, введи тризначне число `); //abc - тризначне число
