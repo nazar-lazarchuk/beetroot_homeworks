@@ -59,7 +59,7 @@ function сheckingFuelForTrip(distance, fuel) {
    if (fuelConsumption > fuel) {
       console.log(`Тебе нужно заправиться потому, что у тебя ${fuel} литров, а твой расход составляет ${fuelConsumption} литров`)
    } else {
-      console.log(`Щасливой дороги`)
+      console.log(`Не переживай, доедшь`)
    }
 }
 
