@@ -48,16 +48,12 @@ console.log(currentFuelAmountMessage);
 const CURRENT_DRIVER = "Bob";
 
 function driverForRide(x) {
-    x = false;
-    for (i = 0; i < objCar.drivers.length; i++) {
-        if (CURRENT_DRIVER == objCar.drivers[i]) {
-            x = true;
-            return `The driver ${CURRENT_DRIVER} is allowed to ride this shit with wheels.`;
+    for (let i = 0; i < objCar.drivers.length; i++) {
+        if (x === objCar.drivers[i]) {
+            return `The driver ${x} is allowed to ride this shit with wheels.`;
         }
-    };
-    if (x == false) {
-        return `${CURRENT_DRIVER}! Go away and buy the driver lisence!!!`;
     }
+    return `${x}! Go away and buy the driver lisence!!!`;
 }
 
 console.log(driverForRide(CURRENT_DRIVER));
