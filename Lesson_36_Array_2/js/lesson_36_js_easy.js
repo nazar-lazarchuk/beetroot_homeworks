@@ -21,53 +21,53 @@ const SHOP_CHECK = [
     },
 ];
 
-const SHOP_CHECK_SIMPLE = function () {
+const shopCheckSimple = function (x) {
     let checkSum = 0;
-    for (i = 0; i < SHOP_CHECK.length; i++) {
-        console.log(`        ${SHOP_CHECK[i].id}. 
-        Name of product: ${SHOP_CHECK[i].pName}. 
-        Price: ${SHOP_CHECK[i].pPrice} $.
-        Quantity: ${SHOP_CHECK[i].pQuantity} items.
-        Sum: ${SHOP_CHECK[i].pPrice * SHOP_CHECK[i].pQuantity} $.
+    for (let i = 0; i < x.length; i++) {
+        console.log(`        ${x[i].id}. 
+        Name of product: ${x[i].pName}. 
+        Price: ${x[i].pPrice} $.
+        Quantity: ${x[i].pQuantity} items.
+        Sum: ${x[i].pPrice * x[i].pQuantity} $.
         ---------------------------------------`);
-        checkSum = checkSum + SHOP_CHECK[i].pPrice * SHOP_CHECK[i].pQuantity;
+        checkSum = checkSum + x[i].pPrice * x[i].pQuantity;
     }
     console.log(`        TOTAL: ${checkSum} $.`);
 }
 
-SHOP_CHECK_SIMPLE(SHOP_CHECK);
+shopCheckSimple(SHOP_CHECK);
 
 // Point 3. The most expensive item
 
-const THE_MOST_EXPENSIVE_PRODUCT = function () {
+const theMostExpensiveProduct = function (y) {
     let expensiveProductId = 1, expensiveProductSum = 0;
-    for (i = 0; i < SHOP_CHECK.length; i++) {
-        if (SHOP_CHECK[i].pPrice * SHOP_CHECK[i].pQuantity >= expensiveProductSum) {
-            expensiveProductId = SHOP_CHECK[i].id;
+    for (let i = 0; i < y.length; i++) {
+        if (y[i].pPrice * y[i].pQuantity >= expensiveProductSum) {
+            expensiveProductId = y[i].id;
         }
     }
-    for (i = 0; i < SHOP_CHECK.length; i++) {
-        if (expensiveProductId === SHOP_CHECK[i].id) {
+    for (let i = 0; i < y.length; i++) {
+        if (expensiveProductId === y[i].id) {
         console.log(`        -----------------------
-        The most expensive product is: ${SHOP_CHECK[i].pName}. It costs ${SHOP_CHECK[i].pPrice * SHOP_CHECK[i].pQuantity} $ for ${SHOP_CHECK[i].pQuantity} items.
+        The most expensive product is: ${y[i].pName}. It costs ${y[i].pPrice * y[i].pQuantity} $ for ${y[i].pQuantity} items.
         -----------------------`);
         }
     }
 }
 
-THE_MOST_EXPENSIVE_PRODUCT(SHOP_CHECK);
+theMostExpensiveProduct(SHOP_CHECK);
 
 // Point 4. The average cost
 
-const THE_AVERAGE_PRODUCT_COST = function () {
+const theAverageProductCost = function (z) {
     let theTotalProductsAmmount = 0, theTotalSum = 0;
-    for (i = 0; i < SHOP_CHECK.length; i++) {
-        theTotalProductsAmmount = theTotalProductsAmmount + SHOP_CHECK[i].pQuantity;
-        theTotalSum = theTotalSum + SHOP_CHECK[i].pPrice * SHOP_CHECK[i].pQuantity;
+    for (let i = 0; i < z.length; i++) {
+        theTotalProductsAmmount = theTotalProductsAmmount + z[i].pQuantity;
+        theTotalSum = theTotalSum + z[i].pPrice * z[i].pQuantity;
     }
     let theAverageCost = Math.trunc(theTotalSum * 100 / theTotalProductsAmmount) / 100;
     console.log(`        The average poduct cost is: ${theAverageCost} $ per item.
         -----------------------`);
 }
 
-THE_AVERAGE_PRODUCT_COST(SHOP_CHECK);
+theAverageProductCost(SHOP_CHECK);
