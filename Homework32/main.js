@@ -1,22 +1,22 @@
 //task1
 
 /*
-function FunctionDeclaration(parameters) {
+function functionDeclaration(parameters) {
   //Function Declaration
   console.log("I do Something");
 }
 
-let FunctionExpression = function (parameters) {
+let functionExpression = function (parameters) {
   //Function Expression
   console.log("I do Something");
 };
 
-let ArrowFunction = (parameters) => {
+let arrowFunction = (parameters) => {
   //Arrow Function
   console.log("I do Something");
 };
 
-let Anonymous = function () {
+let anonymous = function () {
   //Anonymous Function
   console.log("I do Something");
 };
@@ -29,22 +29,22 @@ function(){               //immediately-invoked function expressions
 
 
 //task 2
-function NumberOfArguments() {
+function numberOfArguments() {
   console.log(arguments.length);
 }
 
-NumberOfArguments(1, 2, 3, 4, 5, 6, "a");
+numberOfArguments(1, 2, 3, 4, 5, 6, "a");
 
 //task3
-function Comparison(a, b) {
+function comparison(a, b) {
   if (a < b) console.log(-1);
   else if (a > b) console.log(1);
   else if (a === b) console.log(0);
 }
-Comparison(9, 8);
+comparison(9, 8);
 
 //task4
-function Factorial(a) {
+function factorial(a) {
   let factorial = 1;
   for (let i = 1; i <= a; i++) {
     factorial *= i;
@@ -61,11 +61,11 @@ function doConversionToOneNumber(a, b, c) {
 console.log(doConversionToOneNumber(1, 2, 3));
 
 //task6
-function AreaOfRectangle(a, b = a) {
+function areaOfRectangle(a, b = a) {
   let area = a * b; //якщо зберігати окремо не треба, то return a*b
   return area;
 }
-console.log(AreaOfRectangle(5));
+console.log(areaOfRectangle(5));
 */
 
 // NORMA
@@ -79,16 +79,20 @@ function isPerfect(a) {
   }
 
   if (temp === a && temp !== 0) {
-    console.log("It is a perfect number.");
+    return true;
   } else {
-    console.log("It is not a perfect number.");
+    return false;
   }
 }
 
-isPerfect(28);
+function showPerfectOrNot(a) {
+  if (isPerfect(a)) console.log('This number is perfect')
+  else  console.log('This number is not perfect');
+}
+showPerfectOrNot(29);
 
 //task2
-function ShowPerfectNumberFromRange(from, to) {
+function showPerfectNumberFromRange(from, to) {
   for (let i = from; i <= to; i++) {
     let temp = 0;
     for (let j = 1; j <= i / 2; j++) {
@@ -97,9 +101,8 @@ function ShowPerfectNumberFromRange(from, to) {
       }
     }
 
-    if (temp === i && temp !== 0) {
-      console.log(i);
-    }
+    if (isPerfect(i)) console.log(i);
   }
 }
-ShowPerfectNumberFromRange(1, 1000);
+
+showPerfectNumberFromRange(1, 1000);
