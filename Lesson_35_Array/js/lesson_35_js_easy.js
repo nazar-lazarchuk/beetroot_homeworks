@@ -49,16 +49,16 @@ SHOPPING_LIST.forEach(obj => obj.totalPurchasePrice = obj.productQuantity * obj.
 
 // sorting of products
 
-const SORT_LIST_BY_BOUGHT = (a, b) => (a.isBought > b.isBought ? 1 : -1);
+const sortListByBought = (a, b) => (a.isBought > b.isBought ? 1 : -1);
 
-const SORTED_SHOPPING_LIST = [...SHOPPING_LIST].sort(SORT_LIST_BY_BOUGHT);
+const sortList = [...SHOPPING_LIST].sort(sortListByBought);
 
-console.log(SORTED_SHOPPING_LIST);
+console.log(sortList);
 
 // Point 2. Buying the product
 
-const PURCHASE_LIST = function (inputProductName) {
-    for (i = 0; i < SHOPPING_LIST.length; i++) {
+const purchaseList = function (inputProductName) {
+    for (let i = 0; i < SHOPPING_LIST.length; i++) {
       if (SHOPPING_LIST[i].productName === inputProductName) {
         SHOPPING_LIST[i].isBought = true;
         return SHOPPING_LIST[i];
@@ -66,11 +66,11 @@ const PURCHASE_LIST = function (inputProductName) {
     }
 };
 
-PURCHASE_LIST('Tea');
+purchaseList('Tea');
 console.log(SHOPPING_LIST);
 
 // Point 3. List of non-bought products
 
-const NON_BOUGHT_LIST = SHOPPING_LIST.filter((list) => !list.isBought);
-console.log(NON_BOUGHT_LIST);
+const nonBoughtList = SHOPPING_LIST.filter((list) => !list.isBought);
+console.log(nonBoughtList);
 
