@@ -1,0 +1,385 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 1400px;
+    max-width: 100%;
+    height: 3843px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1111px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation {
+    margin-top: 0px;
+    height: 78px;
+    margin-top: 20px;
+}
+
+.navigation div {
+    height: 78px;
+    display: flex;
+}
+
+div.logo {
+    width: 185px;
+    max-width: 100%;
+    height: 32px;
+    line-height: 1;
+    padding: 22px 0 24px 0;
+}
+
+.logo img:first-child {
+    margin-right: 11px;
+    width: 31px;
+    height: 32px;
+}
+
+.logo img:nth-child(2) {
+    width: 143px;
+    height: 29px;
+    margin-top: 3px;
+}
+
+div.nav-link {
+    width: 350px;
+    max-width: 100%;
+    height: 28px;
+    margin-top: 24px;
+    margin-left: 321px;
+}
+
+.nav-link a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #2F281E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.nav-link a:first-child {
+    margin-left: 0;
+}
+
+.nav-btn {
+    width: 226px;
+    display: inline;
+}
+
+.btn {
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.nav-btn1 {
+    width: 102px;
+    height: 46px;
+    border: 1px solid #BCD0E5;    
+    background: inherit;
+    color: #173A56;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-right: 14px;
+
+}
+
+.nav-btn2 {
+    width: 110px;
+    height: 46px;
+    border: 0;    
+    background: #FF9900;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+header.head-block {
+    width: 1125px;
+    height: 495px;
+    margin-top: 30px;
+}
+
+.head-title h1 {
+    margin-top: 83px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+}
+
+.head-title p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 30px 0 45px 0;
+}
+
+.head-logo {
+    width: 604px;
+    height: 495px;
+}
+
+.head-btn {
+    height: 53px;
+    width: 175px;
+    border: 0;
+}
+
+.head-btn__get-started {
+    background: #FF9900;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.head-btn__video {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF9900;
+    background: #ffffff;
+    margin-left: 15px;
+}
+
+.feature {
+    height: 543px;
+    margin-top: 111px;
+    flex-direction: column;
+}
+
+.feature-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-title h3.description-head {
+    line-height: 54px;
+}
+
+.feature-card {
+    width: 1094px;
+    height: 204px;
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-card__card {
+    width: 240px;
+    height: 178px;
+}
+
+.feature-card__card:last-child {
+    width: 240px;
+    height: 204px;
+}
+
+.feature-card__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #2F281E;
+}
+
+.feature-card__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.feature-btns {
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+}
+
+.feature-btn {
+    width: 175px;
+    height: 53px;
+    background: #FF9900;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+section.design-professionals {
+    width: 1110px;
+    height: 574px;
+    margin-top: 120px;
+}
+
+.design-professionals__description {
+    width: 486px;
+    height: 531px;
+    margin-top: 26px;
+}
+
+.description-head {
+    margin: 3px 0 22px 0;
+    font-weight: bold;
+    font-size: 36px;
+    color: #2F281E;
+}
+
+.description-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.description-title {
+    margin: 25px 0 12px 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2F281E;
+}
+
+.first-description {
+    margin-top: 30px;
+}
+
+.product-managers {
+    margin-top: 102px;
+    width: 1121px;
+    height: 521px;
+}
+
+.design-professionals__logo {
+    width: 520px;
+    height: 573px;
+}
+
+.product-managers__logo {
+    width: 533px;
+    height: 520px;
+}
+
+.product-managers__descriptions {
+    width: 486px;
+    height: 427px;
+    margin-top: 48px;
+}
+
+ul.list {
+    text-decoration: none;
+    list-style-type: none;
+    display: block;
+    padding: 0;
+}
+
+ul li {
+    margin-top: 30px;
+    padding-left: 65px;
+    background-image: url('/assets/img/point.svg');
+    background-repeat: no-repeat;
+    background-position:0 9px;
+}
+
+.marketers {
+    width: 1110px;
+    height: 609px;
+    margin-top: 105px;
+}
+
+.marketers__description {
+    width: 486px;
+    height: 531px;
+    margin-top: 39px;
+}
+
+.marketers__logo {
+    width: 542px;
+    height: 609px;
+}
+
+.productly-footer {
+    width: 1109px;
+    height: 308px;
+    margin-top: 146px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-line {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 147px;
+}
+
+.productly-logo {
+    display: flex;
+    justify-content: center;
+   margin-bottom: 256px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    margin-bottom: 83px;
+}
+
+.footer-links ul li {
+    margin-top: 0;
+    padding-left: 0;
+    background-image: none;
+}
+
+.footer-links ul li a {
+    text-decoration : none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #544837;
+}
+
+.footer__send {
+    width: 325px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #BCD0E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.button-signup {
+    background: #FF9900;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-btn {
+    width: 131px;
+    height: 39px;
+    margin: 21px 0 89px 0;
+}
