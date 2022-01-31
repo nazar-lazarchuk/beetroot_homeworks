@@ -1,13 +1,44 @@
+const time = function (hour, minutes, seconds) {
+  const formattedHour = hour.toString().padStart(2, "0");
+  const formattedMinutes = minutes.toString().padStart(2, "0");
+  const formattedSeconds = seconds.toString().padStart(2, "0");
 
-document.querySelector('button').onclick = function(){
-  let newYear = new Date(document.querySelector('#start-date').value);
-  let currentDate = new Date(document.querySelector('#end-date').value);
-  let sec = (newYear - currentDate) / 1000;
-  let h = sec/3600 ^ 0 ;
-  let m = (sec-h*3600)/60 ^ 0 ;
-  let s = sec-h*3600-m*60 ^ 0 ;
-  /* alert((h<10?"0"+h:h)+" ч. "+(m<10?"0"+m:m)+" мин. "+(s<10?"0"+s:s)+" сек.") ;  - цей код я знайшов в інтернеті (але він дуже на мій огляд складний) 
-  - тому я переробив його і нижче вивів в alert*/
-  alert(('0' + h).slice(1) +" ч. " + " " + ('0' + m).slice(-2)+" мин. " + " " + ('0' + s).slice(-2)+ " сек. ")
-}
+  return `${formattedHour} : ${formattedMinutes} : ${formattedSeconds}`;
+};
 
+console.log(time(2, 14, 5));
+
+
+
+const seconds = function (hour, minutes, seconds) {
+  let hourToSeconds = hour * 3600;
+  let minutesToSeconds = minutes * 60;
+
+  return hourToSeconds + minutesToSeconds + seconds;
+};
+
+console.log(seconds(1, 1, 1));
+
+
+
+const timeInSeconds = function (seconds) {
+  let transHours = Math.floor(seconds / 60 / 60);
+  let transMinutes = Math.floor(seconds / 60) - transHours * 60;
+  let transSeconds = seconds % 60;
+
+  return time(transHours, transMinutes, transSeconds);
+};
+
+console.log(timeInSeconds(2400));
+
+
+
+const differenceInTime = function (h1, m1, s1, h2, m2, s2) {
+  let firstDate = seconds(h1, m1, s1);
+  let secondDate = seconds(h2, m2, s2);
+  let difference = firstDate - secondDate;
+
+  return timeInSeconds(difference);
+};
+
+console.log(differenceInTime(5, 9, 4, 5, 1, 1));
