@@ -1,144 +1,67 @@
-const inputs = document.querySelectorAll('input[name = "number"]')
-inputs.forEach(item =>{
-  item.addEventListener('input', () =>{
-      item.value = item.value.replace(/\D/, '');
-  });
-});
-
-document.querySelector('button').onclick = function summ (){
-  let hour = document.getElementById('hour').value;
-  let minut = document.getElementById('minutes').value;
-  let sec = document.getElementById('seconds').value;
-
-
-  let hourtwo = document.getElementById('hour2').value;
-  let minuttwo = document.getElementById('minutes2').value;
-  let sectwo = document.getElementById('seconds2').value;
-
-  let obj1 = {
-    hours : +(hour),
-    minuts : +(minut),
-    secs : +(sec),
-  }
-
-  
-  for(let key in obj1){
-    if(obj1.secs == 60){
-      obj1.minuts = obj1.minuts + 1;
-      obj1.secs = '0';
-    } else if(obj1.secs == 0){
-      obj1.secs = '0';
-    } else if(obj1.secs > 60){
-      obj1.minuts = obj1.minuts + 1;
-      obj1.secs = obj1.secs - 60;
-    }
-  }
-
-  for(let key in obj1){
-    if(obj1.minuts == 60){
-      obj1.hours = obj1.hours + 1;
-      obj1.minuts = '0';
-    } else if(obj1.minuts == 0){
-      obj1.minuts = '0';
-    } else if(obj1.minuts > 60){
-      obj1.hours = obj1.hours + 1;
-      obj1.minuts = obj1.minuts - 60;
-    }
-  };
-
-
-  for(let key in obj1){
-    if(obj1.hours > 24){
-      alert('У добі 24 години.')
-      obj1.hours = "";
-      obj1.minuts = "";
-      obj1.secs = "";
-    } else if(obj1.hours == 0){
-      obj1.hours = '0';
-    }
-  };
-  
-
-
-  let obj2 = {
-    hoursTwo : +(hourtwo),
-    minutsTwo : +(minuttwo),
-    secsTwo : +(sectwo),
-  }
- 
-  for(let key in obj2){
-    if(obj2.secsTwo == 60){
-      obj2.minutsTwo = obj2.minutsTwo + 1;
-      obj2.secsTwo = '0';
-    } else if(obj2.secsTwo > 60){
-      obj2.minutsTwo = obj2.minutsTwo + 1;
-      obj2.secsTwo = obj2.secsTwo - 60;
-    }
-  }
-
-  for(let key in obj2){
-    if(obj2.minutsTwo == 60){
-      obj2.hoursTwo = obj2.hoursTwo + 1;
-      obj2.minutsTwo = '0';
-    }  else if(obj2.minutsTwo > 60){
-      obj2.hoursTwo = obj2.hoursTwo + 1;
-      obj2.minutsTwo = obj2.minutsTwo - 60;
-    }
-  };
-
-  for(let key in obj2){
-    if(obj2.hoursTwo > 24){
-      alert('У добі 24 години.')
-      obj2.hoursTwo = "";
-      obj2.minutsTwo = "";
-      obj2.secsTwo = "";
-    } 
-  };
+const times = {
+  hour: 0,
+  minute: 0,
+  second: 0,
+};
 
 
 
-  function summ (){
-    let resultHours =  obj1.hours + obj2.hoursTwo;
-    let resultMinut =  obj1.minuts + obj2.minutsTwo;
-    let resultSecond =  obj1.secs + obj2.secsTwo;
+const time = () => {
+  const formattedHour = times.hour.toString().padStart(2, "0");
+  const formattedMinutes = times.minute.toString().padStart(2, "0");
+  const formattedSeconds = times.second.toString().padStart(2, "0");
 
-    if(resultSecond == 60){
-      resultMinut = resultMinut + 1;
-      resultSecond = '00';
-    }else if(resultSecond > 60){
-      resultMinut = resultMinut + 1;
-      resultSecond = resultSecond - 60;
-
-    }else if(resultSecond < 10 && resultSecond != 0 ){
-      resultSecond = '0' + resultSecond;
-    }
-
-
-    if(resultMinut == 60){
-      resultHours = resultHours + 1;
-      resultMinut = '00';
-    }else if(resultMinut > 60){
-      resultHours = resultHours + 1;
-      resultMinut = resultMinut - 60;
-    }else if(resultMinut < 10 && resultMinut != 0){
-      resultMinut = '0' + resultMinut;
-    };
-
-  
-    if(resultHours < 10 && resultHours != 0){
-      resultHours = '0' + resultHours;
-    }else if(resultHours >= 24){
-      alert('У добі 24 години.')
-      resultHours = "";
-      resultMinut = "";
-      resultSecond = "";
-    };
-
-
-    document.getElementById('showhour2').innerHTML = resultHours;
-    document.getElementById('showminutes2').innerHTML = resultMinut;
-    document.getElementById('showseconds2').innerHTML = resultSecond;
-
-  }
-  summ();
+  return `${formattedHour} : ${formattedMinutes} : ${formattedSeconds}`;
 }
+
+
+
+
+const seconds = (seconds) => {
+  let secondsToSeconds = (seconds % 60);
+  let secondsToMinute = Math.floor((seconds / 60) % 60);
+  let secondsToHour = Math.floor(seconds / 3600);
+  newSecond = times.second + secondsToSeconds;
+  newMinute = times.minute + secondsToMinute;
+  newHour = times.hour + secondsToHour;
+
+  if (seconds > 60) {
+      return Object.assign(times, {second: newSecond}, {minute: newMinute}, {hour: newHour});
+  } else
+      return Object.assign(times, {second: seconds});
+}
+
+console.log(seconds(89));
+
+
+const minutes = (minutes) => {
+  let minutesToMinutes = (minutes % 60);
+  let minutesToHours = Math.floor((minutes / 60) % 60);
+  newMinute2 = times.minute + minutesToMinutes;
+  newHour2 = times.hour + minutesToHours;
+
+  if (minutes > 60) {
+      return Object.assign(times, {minute: newMinute2}, {hour: newHour2});
+  } else
+      return Object.assign(times, {minute: minutes});
+}
+
+console.log(minutes(12));
+
+
+
+const hours = (hours) => {
+  let hourToHours = (hours % 24);
+  let hourtoDays = (hours / 24) % 24;
+  newHour3 = times.hour + hourToHours;
+  newDay = hourtoDays;
+
+  if (hours > 24) {
+      return Object.assign(times, {hour: newHour3}, {day: 'Це наступний день'});
+  } else
+      return Object.assign(times, {hour: hours});
+}
+
+console.log(hours(45));
+
+console.log(time());
