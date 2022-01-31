@@ -29,7 +29,7 @@ function body
 6)immediately-invoked function expressions - Функция немедленного  вызова
 function(){
 function body
-}()
+}();
 */
 
 //#2 Створи функцію, яка буде виводити кількість переданих їй аргументів.
