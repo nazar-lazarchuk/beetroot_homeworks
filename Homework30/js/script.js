@@ -8,6 +8,7 @@ function summ () {
 	
 	let resultSumm = Math.floor(bank*100)/100 + Math.floor(resultMounth*100)/100;
 	
-	document.getElementById('out').innerHTML = resultSumm.toFixed(2)+val;
+
+	document.getElementById('out').innerText = `${resultSumm} грн`;
 
 }
