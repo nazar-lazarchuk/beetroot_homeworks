@@ -34,9 +34,9 @@ function body
 
 //#2 Створи функцію, яка буде виводити кількість переданих їй аргументів.
 function showNumberOfArguments() {
-   console.log(arguments.length)
+   return arguments.length;
 }
-showNumberOfArguments(4, 2, 3, 4);
+console.log(showNumberOfArguments(4, 2, 3, 4));
 
 
 /*#3 Напиши функцію, яка приймає 2 числа і повертає :
@@ -45,11 +45,11 @@ showNumberOfArguments(4, 2, 3, 4);
 0 - якщо числа рівні.
 */
 function getValue(a, b) {
-   if (a < b) console.log(-1);
-   else if (a > b) console.log(1);
-   else if (a = b) console.log(1);
+   if (a < b) return '-1';
+   else if (a > b) return '1';
+   else if (a = b) return '1';
 }
-getValue(5, 9);
+console.log(getValue(5, 9));
 
 //#4 Напиши функцію, яка обчислює факторіал переданого їй числа. 
 function calcFactorial(c) {
@@ -57,9 +57,9 @@ function calcFactorial(c) {
    for (let i = 1; i <= c; i++) {
       factorial = factorial * i;
    }
-   console.log(factorial)
+   return factorial;
 }
-calcFactorial(4);
+console.log(calcFactorial(4));
 
 
 /*#5 
@@ -68,9 +68,9 @@ calcFactorial(4);
 */
 function getNumberString(a, b, c) {
    let NumberString = a + '' + b + '' + c;
-   console.log(NumberString)
+   return NumberString;
 }
-getNumberString(1, 4, 9)
+console.log(getNumberString(1, 4, 9));
 
 /*#6 
 Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. 
@@ -78,6 +78,6 @@ getNumberString(1, 4, 9)
 */
 function calcArea(a, b = a) {
    let area = a * b;
-   console.log(area);
+   return area;
 }
-calcArea(5, 6)
+console.log(calcArea(5, 6));
