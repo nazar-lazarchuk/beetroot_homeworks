@@ -4,138 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<title>Homework35Js</title>
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="./font/icon/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
 </head>
 
 <body>
-	<div class="container mb-5">
-		<button class="basket" type="button">
-			<span class="icon-basket"></span>
-			<span class="basket__number">0</span>
-		</button>
-		<div class="row">
-			<div class="col-md-8">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card mb-4" data-id="01">
-							<img class="product-img" src="img/product/burger.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Burger</h4>
-								<div class="details-wrapper">
-									<div class="items counter-wrapper">
-										<div class="items__control" data-action="minus">-</div>
-										<div class="items__current" data-counter>1</div>
-										<div class="items__control" data-action="plus">+</div>
-									</div>
-									<div class="price">
-										<div class="price__weight">100г.</div>
-										<div class="price__currency">45 грн</div>
-									</div>
-								</div>
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в кошик</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-4" data-id="02">
-							<img class="product-img" src="img/product/kartoshka-fri.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Kartoshka-fri</h4>
-								<div class="details-wrapper">
-									<div class="items counter-wrapper">
-										<div class="items__control" data-action="minus">-</div>
-										<div class="items__current" data-counter>1</div>
-										<div class="items__control" data-action="plus">+</div>
-									</div>
-									<div class="price">
-										<div class="price__weight">200г.</div>
-										<div class="price__currency">75 грн</div>
-									</div>
-								</div>
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в кошик</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-4" data-id="03">
-							<img class="product-img" src="img/product/stripsy.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Stripsy</h4>
-								<div class="details-wrapper">
-									<div class="items counter-wrapper">
-										<div class="items__control" data-action="minus">-</div>
-										<div class="items__current" data-counter>1</div>
-										<div class="items__control" data-action="plus">+</div>
-									</div>
-									<div class="price">
-										<div class="price__weight">200г.</div>
-										<div class="price__currency">150 грн</div>
-									</div>
-								</div>
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в кошик</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-4" data-id="04">
-							<img class="product-img" src="img/product/ice-cream.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Ice-cream</h4>
-								<div class="details-wrapper">
-									<div class="items counter-wrapper">
-										<div class="items__control" data-action="minus">-</div>
-										<div class="items__current" data-counter>1</div>
-										<div class="items__control" data-action="plus">+</div>
-									</div>
-									
-									<div class="price">
-										<div class="price__weight">50г.</div>
-										<div class="price__currency">60 грн</div>
-									</div>
-								</div>
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">
-									+ в кошик
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4  none">
-				<div class="card mb-4">
-					<div class="card-body">
-						<h5 class="card-title">Ваше замовлення</h4>
-						<div data-cart-empty class="alert alert-secondary" role="alert">
-							кошик порожній
-						</div>
-						<div class="cart-wrapper">
-						</div>
-						<div class="cart-total">
-							<p><span class="h5">Всього:</span> <span class="total-price">0</span> <span class="rouble">грн</span></p>
-						</div>
-					</div>
-					<div id="order-form" class="card-body border-top none">
-						<h5 class="card-title">Оформити замовлення</h4>
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Ваш номер телефона">
-							</div>
-							<button type="submit" class="btn btn-primary">Замовити</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
 	
 	<script src="./js/script.js"></script>
-	<script src="./js/calcCartPrice.js"></script>
-	<script src="./js/toggleCartStatus.js"></script>
-	<script src="./js/counter.js"></script>
-	<script src="./js/cart.js"></script>
 </body>
 
 </html>
