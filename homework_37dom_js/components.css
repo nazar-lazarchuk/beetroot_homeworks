@@ -1,0 +1,39 @@
+
+    /* lesson_12 BEM metodology */
+
+.button__first {
+height: 46px;
+background: #FF9900;
+color: #FFFFFF;
+border-radius: 4px;
+font-style: normal;
+font-size: 16px;
+line-height: 24px;
+border: 1px solid #FF9900;
+cursor: pointer;
+}
+
+.header--button2 {
+width: 110px;
+margin-left: 14px;
+}
+
+.button--started {
+width: 145px;
+height: 53px;
+font-weight: bold;
+}
+
+.design--button {
+width: 175px;
+height: 53px;
+margin-top: 60px;
+margin-left: 480px;
+font-weight: bold;
+}
+
+.footer--button {
+width: 131px;
+height: 39px;
+font-weight: bold;
+}
