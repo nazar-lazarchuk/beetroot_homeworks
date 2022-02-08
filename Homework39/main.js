@@ -2,6 +2,8 @@ const popup = document.getElementById('modalWindow');
 const btnOpen = document.querySelector('.btn-open');
 const btnClose = popup.querySelector('.btn-close');
 
+console.log(popup, btnOpen, btnClose);
+
 
  btnOpen.addEventListener('click', (e) => {
      popup.style.display = "block";
@@ -20,3 +22,4 @@ const btnClose = popup.querySelector('.btn-close');
     btnOpen.style.display = "block";
     
 });
+
