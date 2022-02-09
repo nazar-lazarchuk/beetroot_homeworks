@@ -1,0 +1,99 @@
+body {
+  font-family: 'Montserrat';
+  background-color: antiquewhite;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.block {
+  max-width: 300px;
+  position: relative;
+  padding: 10px;
+  border: 3px solid #ffb95d;
+  border-radius: 10px;
+  background-color: #f8d19e;
+  display: none;
+  cursor: pointer;
+}
+
+.block__button {
+  position: absolute;
+  right: 20px;
+  background-color: #f3ab4c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.block__button:hover {
+  background-color: orange;
+}
+
+.block__button:active {
+  background: red;
+}
+
+#openModalWindow {
+  background: #f1b950;
+  border: 1px dashed orange;
+  border-radius: 10px;
+  max-width: 150px;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 45px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#openModalWindow:hover {
+  background: #ee8726;
+}
+
+#openModalWindow:active {
+  background-color: #ee7c39;
+}
+
+.task_2 {
+  background: #f8b21a;
+  margin: 20px 0 0 100px;
+  max-width: 500px;
+  padding: 30px;
+}
+
+.task_2 p {
+  max-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#newSongButton {
+  margin-top: 20px;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
