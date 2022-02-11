@@ -39,5 +39,3 @@ document.addEventListener('keydown', (event) => {
         mainContainerText.innerHTML = mainContainerNewText.value;
     }
 });
-
-
