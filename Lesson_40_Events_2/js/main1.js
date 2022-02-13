@@ -72,7 +72,7 @@ const carsListTitle = ["Car name", "Production year", "Max speed", "Car price",
 
 const mainContainer2 = document.createElement('div');
 mainContainer2.id = 'main-container';
-document.body.prepend(mainContainer2);
+document.body.appendChild(mainContainer2);
 mainContainer2.style.padding = "20px";
 
 // table
