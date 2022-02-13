@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title></title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="bank__сalculator">
+					<label for="deposit">Введіть суму депозиту</label>
+					<input type="text" id="deposit">
+
+					<label>На який період</label>
+					<select id="month">
+						<option value="2">2 місяці</option>
+						<option value="4">4 місяці</option>
+						<option value="6">6 місяців</option>
+						<option value="8">8 місяців</option>
+						<option value="10">10 місяців</option>
+						<option value="12">12 місяців</option>
+					</select>
+	
+					<label for="rate">Під який відсоток</label>
+					<select id="interest">
+						<option value="2">2%</option>
+						<option value="5">5%</option>
+						<option value="7">7%</option>
+						<option value="10">10%</option>
+					</select>
+					<button id="btn" type="submit" onclick="summ()">Порахувати</button>
+					<p id="out" ></p>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	padding: 30px;
+}
+
+h1 {
+	margin: 0px 0px 20px 0px;
+}
+h2 {
+	margin: 0px 0px 15px 0px;
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.bank__сalculator {
+	max-width: 200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+	
+
+select{
+	color: #fff;
+	background-color: #333;
+	border-bottom: 1px solid aqua;
+	margin: 10px 0px 10px 0px;
+}
+input{
+	color: #fff;
+	background-color: #333;
+	border: 1px solid aqua;
+	margin: 10px 0px 10px 0px;
+	height: 25px;
+}
+button{
+	height: 25px;
+	background-color:cyan;
+	color: black;
+	cursor: pointer;
+}
+p{
+	margin-top: 10px;
+	border-top: 2px solid wheat;
+	padding: 10px;
+}
