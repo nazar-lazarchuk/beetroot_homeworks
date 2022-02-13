@@ -1,0 +1,40 @@
+
+.item{
+    height:50px;
+    width: 50px;
+    position: relative;
+    background-color: aqua;
+}
+
+.resize{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: black;
+    z-index: 10;
+}
+
+
+
+.ne {
+    top: -1px;
+    right: -1px;
+    cursor: ne-resize;
+}
+.nw {
+    top: -1px;
+    left: -1px;
+    cursor: nw-resize;
+}
+.sw {
+    bottom: -1px;
+    left: -1px;
+    cursor: sw-resize;
+
+}
+.se {
+    bottom: -1px;
+    right: -1px;
+    cursor: se-resize;
+}
