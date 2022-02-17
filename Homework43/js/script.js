@@ -1,22 +1,20 @@
 ///form///
 
-let ObjForm = {};
+const ObjForm = {};
 
 
 document.addEventListener('DOMContentLoaded', function () {
 	const form = document.getElementById('form');
-	form.addEventListener('submit', formSend);
-
-	async function formSend(e) {
-		let error = formValidate(form);
+	form.addEventListener('submit', (e) => {
+		const error = formValidate(form);
 
 		e.preventDefault();
 
 
-		let name = document.getElementById('formName');
-		let email = document.getElementById('formEmail');
-		let website = document.getElementById('Website');
-		let comment = document.getElementById('comment');
+		const name = document.getElementById('formName');
+		const email = document.getElementById('formEmail');
+		const website = document.getElementById('Website');
+		const comment = document.getElementById('comment');
 
 
 		if (error === 0) {
@@ -34,11 +32,11 @@ document.addEventListener('DOMContentLoaded', function () {
     		e.preventDefault();
 		}
 
-	}
+	})
 
-	function formValidate(form) {
+	function formValidate() {
 		let error = 0;
-		let formReq = document.querySelectorAll('._req');
+		const formReq = document.querySelectorAll('._req');
 
 		for (let index = 0; index < formReq.length; index++) {
 			const input = formReq[index];
