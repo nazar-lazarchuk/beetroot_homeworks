@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Операторы в JavaScript</title>
+	</head>
+	<body>
+		<form action="#" id="form" class="form__body">
+			<h6 class="form__title">Leave a Reply</h6>
+			<p>Required fields are marked *</p>
+				<div class="form__name">
+					<div class="form__item">
+						<label for="formName" class="form__label">Name*</label>
+						<input id="formName" type="text" placeholder="Walter Moss" name="name" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">E-mail*</label>
+						<input id="formEmail" type="text" placeholder="Info@manifest.com" name="Email" class="form__input _req _email">
+					</div>
+					<div class="form__item">
+						<label for="Website" class="form__label">Website</label>
+						<input id="Website" type="text" placeholder="www.manifest.com" name="Website" class="form__input ">
+					</div>
+				</div>
+				<div class="form__checkbox">
+					<div class="checkbox">
+						<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input">
+						<label for="formAgreement" class="checkbox__label"><span>Save my name, email, and website in this browser for the next time I comment</span></label>
+					</div>
+				</div>
+				<div class="form__comment">
+					<label for="comment" class="form__label">Comment*</label>
+					<input id="comment" type="text" placeholder="Hi there ..." name="Website" class="form__input _req">
+				</div>
+			<button type="submit" class="form__button">Post</button>
+		</form>
+		<script src="js/script.js"></script>
+	</body>
+</html>
