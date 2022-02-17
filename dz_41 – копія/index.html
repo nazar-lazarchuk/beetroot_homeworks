@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <link rel="stylesheet" href="/dist/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Feedback</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="/" method="get" class="form">
+        <h2 class="form__header">Leave feedback</h2>
+        <input
+          type="text"
+          name="name"
+          class="form__input"
+          id="name"
+          placeholder="Enter your name and surname"
+          required
+        /> <br>
+        <input
+          type="email"
+          name="email"
+          class="form__input"
+          id="email"
+          placeholder="Enter your e-mail"
+          required
+        /> <br>
+        <textarea
+          name="comment"
+          class="form__input"
+          id="comment"
+          placeholder="Leave your comment"
+        ></textarea> <br>
+        <div class="form__questions" id="form1">
+          <span class="form__question">
+            What do you find the most interesting in our restourant?
+          </span> <br>
+
+          <input
+            type="checkbox"
+            name="food"
+            class="form_checkbox"
+            id="checkbox"
+          /> 
+          <label for="checkbox">Delicious food</label>  <br>
+
+          <input
+            type="checkbox"
+            name="service"
+            class="form_checkbox"
+            id="checkbox"
+          />
+          <label for="checkbox2">Polite service</label> <br>
+
+          <input
+            type="checkbox"
+            name="interior"
+            class="form_checkbox"
+            id="checkbox"
+          />
+          <label for="checkbox3">Amazing interior</label>  <br>
+
+          <input
+            type="checkbox"
+            name="location"
+            class="form_checkbox"
+            id="checkbox"
+          />
+          <label for="checkbox4">Comfortable location</label> <br>
+        </div>
+        <div class="form__questions" id="form2">
+          <span class="form__question"> Will you visit us one more time? </span> <br>
+          <input type="radio" name="future_visit" class="form_radio" id="radio" />Yes
+          <input type="radio" name="future_visit" class="form_radio" id="radio" />No
+        </div>
+        <button type="submit" class="form__button">Send</button>
+      </form>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

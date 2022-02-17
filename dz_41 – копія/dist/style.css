@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,200&display=swap");
+body {
+  background-image: url(/assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Nunito';
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.wrapper {
+  display: relative;
+}
+
+.form {
+  margin: 10vh auto 0 auto;
+  background: white;
+  border-radius: 10%;
+  max-width: 400px;
+  max-height: 900px;
+  padding: 35px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.form__header {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.form__question {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.form__questions {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form__questions:nth-child(3n) {
+  margin-bottom: 40px;
+}
+
+.form__input {
+  width: 370px;
+  height: 35px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #5a1111;
+  resize: none;
+}
+
+.form__input:nth-child(3n) {
+  height: 100px;
+}
+
+.form__button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#744a1a), to(#994704));
+  background: linear-gradient(90deg, #744a1a 0%, #994704 100%);
+  border: none;
+  border-radius: 1000px;
+  -webkit-box-shadow: 12px 12px 24px rgba(253, 122, 0, 0.64);
+          box-shadow: 12px 12px 24px rgba(253, 122, 0, 0.64);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.form button::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  -webkit-box-shadow: 0 0 60px rgba(209, 71, 6, 0.64);
+          box-shadow: 0 0 60px rgba(209, 71, 6, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+
+.form .button:hover, .form .button:focus {
+  color: #313133;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.form button:hover::before, .form button:focus::before {
+  opacity: 1;
+}
+
+.form button:hover::after, .form button:focus::after {
+  -webkit-animation: none;
+          animation: none;
+  display: none;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.invalid-feedback {
+  font-size: 14px;
+  color: brown;
+}
+/*# sourceMappingURL=style.css.map */

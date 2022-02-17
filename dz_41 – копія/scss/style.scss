@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,200&display=swap');
+body{
+    background-image: url(/assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nunito';
+    overflow-x: hidden;
+    background-color:black;
+
+}
+.wrapper{
+    display: relative;
+}
+.form{
+    margin: 10vh auto 0 auto;
+    background: rgb(255, 255, 255);
+    border-radius: 10%;
+    max-width: 400px;
+    max-height: 900px;
+    padding: 35px;
+    font-size: 20px;
+    text-align: center;
+    &__header{
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto 20px; 
+    }
+    &__question{
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+    }
+    &__questions{
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    &__questions:nth-child(3n){
+        margin-bottom: 40px;
+    }
+    &__input{
+        width: 370px;
+        height: 35px;
+        border-radius:10px;
+        box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.1);
+        border: 2px solid rgb(90, 17, 17);
+        resize: none;
+    }
+    &__input:nth-child(3n){
+        height: 100px;
+    }
+    &__button {
+        min-width: 300px;
+        min-height: 60px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        font-weight: 500;
+        color: #ffffff;
+        background: linear-gradient(90deg, rgb(116, 74, 26) 0%, rgb(153, 71, 4) 100%);
+        border: none;
+        border-radius: 1000px;
+        box-shadow: 12px 12px 24px rgba(253, 122, 0, 0.64);
+        transition: all 0.3s ease-in-out 0s;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+        padding: 10px;
+        }
+      button::before {
+      content: '';
+        border-radius: 1000px;
+        min-width: calc(300px + 12px);
+        min-height: calc(60px + 12px);
+        box-shadow: 0 0 60px rgba(209, 71, 6, 0.64);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all .3s ease-in-out 0s;
+      }
+      
+      .button:hover, .button:focus {
+        color: #313133;
+        transform: translateY(-6px);
+      }
+      
+      button:hover::before, button:focus::before {
+        opacity: 1;
+      }
+      
+
+      
+      button:hover::after, button:focus::after {
+        animation: none;
+        display: none;
+      }
+      
+      @keyframes ring {
+        0% {
+          width: 30px;
+          height: 30px;
+          opacity: 1;
+        }
+        100% {
+          width: 300px;
+          height: 300px;
+          opacity: 0;
+        }
+      }
+}
+
+.invalid-feedback{
+  font-size: 14px;
+  color: brown;
+}
