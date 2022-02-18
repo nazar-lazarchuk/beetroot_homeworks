@@ -1,0 +1,14 @@
+
+body{
+  background: url('/assets/bg.jpeg') no-repeat;
+  background-size: cover ;
+}
+
+#map {
+  margin: 20vh auto;
+  height: 50vh;
+  width: 40vw;
+  border: solid rgb(170, 170, 170);
+  border-width: 40px 15px 15px 15px;
+  border-radius: 10px;
+}
