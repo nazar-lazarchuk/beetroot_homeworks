@@ -1,0 +1,148 @@
+html,
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  background: grey;
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 561px;
+  width: 100%;
+  max-height: 720px;
+  height: 100%;
+  padding: 15px 15px 15px 15px;
+  background: white;
+}
+.title {
+  font-size: 24px;
+  line-height: 24px;
+}
+.text, .checkbox {
+  font-size: 20px;
+  line-height: 24px;
+}
+.standart-form {
+  display: flex;
+  justify-content: space-between;
+}
+.form-label {
+  margin: 10px 20px 10px 0;
+}
+.input-form {
+  height: 38px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #969696;
+  padding-left: 10px;
+}
+.input-form:focus {
+  border: 1px solid #007bff;
+  outline: none;
+}
+.input-form__small {
+  width: 235px;
+}
+.input-form__long {
+  width: 529px;
+  margin-top: 10px;
+}
+.gender-form {
+  display: flex;
+  margin-top: 15px;
+}
+.gender-form__input {
+  margin-right: 20px;
+}
+.gender-form__input input[type="radio"] {
+  margin-right: 20px;
+  display: none;
+}
+.gender-form__input label::before {
+  display: inline-block;
+  content: "";
+  cursor: pointer;
+  border: 1px solid #999;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.gender-form__input input[type="radio"]:checked + label::before {
+  background-color: #007BFF;
+  background-image: radial-gradient(
+    circle closest-corner at 50% 50%,
+    #fff 30%,
+    #007BFF 30%
+  );
+}
+.input-form__select {
+  height: 42px;
+  width: 235px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #969696;
+  padding-left: 10px;
+}
+.footer-block {
+  text-align: center;
+  padding-top: 10px;
+}
+.footer-block > a {
+  text-decoration: none;
+}
+select {
+  position: relative;
+  opacity: 0.5;
+  -webkit-appearance: none;
+}
+.select-form {
+position: relative;
+}
+.select-form::before{
+  display: inline-block;
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 7px;
+  border-left-width: 7px;
+  transition: border-color 0.3s;
+}
+.select-form::after  {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 7px;
+  border-left-width: 7px;
+  transition: border-color 0.3s;
+}
+.select-form::after {
+  top: 0px;
+  border-bottom: 7px solid #a79999;
+}
+
+.select-form::before {
+  bottom: 0;
+  border-top: 7px solid #a79999;
+  z-index: 10;
+}
+
+.button {
+  cursor: pointer;
+  padding: 11px 23px;
+  background: white;
+  color: #173a56;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
