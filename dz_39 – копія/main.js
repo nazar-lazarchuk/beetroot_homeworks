@@ -26,6 +26,7 @@ window.onclick = (area) => {
 //Task 2
 
 //MODEL
+//MODEL
 const addedSongs = document.querySelector("#addedSongs");
 const listHtml = document.getElementById("playlist");
 let playList = [
@@ -82,9 +83,9 @@ const renderAddedSongs = (playList) => {
     labelSong.innerText = `${playList[index].song}`;
     const buttonDelete = document.createElement("BUTTON");
     buttonDelete.innerText = "Delete";
-
+    const value = playList[index];
     setDeleteHandler(buttonDelete, () => {
-      playList.splice(playList.indexOf(index), 1);
+      playList.splice(playList.indexOf(value), 1);
     });
 
     li.append(labelSinger, buttonDelete);
