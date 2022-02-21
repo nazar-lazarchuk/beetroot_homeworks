@@ -7,7 +7,7 @@ let songList = document.querySelector('.song-list');
 let ol = document.createElement("ol");
 songList.append(ol);
 
-var playList = [
+let playList = [
    {
       author: "LED ZEPPELIN",
       song: "STAIRWAY TO HEAVEN"
@@ -42,18 +42,16 @@ var playList = [
    }
 ];
 
-
-for (var i = 0; i < playList.length; i++) {
+for (let i = 0; i < playList.length; i++) {
    let li = document.createElement('li');
    li.innerText = `${playList[i].author}: ${playList[i].song}`
    ol.append(li);
 
    let btnDelete = document.createElement('button');
    li.appendChild(btnDelete).textContent = "Удалить";
-   function deleteParentElement() {
-      btnDelete.parentElement.remove();
-   };
-   btnDelete.addEventListener('click', deleteParentElement);
+   btnDelete.addEventListener('click', deleteParentElement = () => {
+      btnDelete.parentElement.remove()
+   });
 }
 
 let songwriter = document.querySelector('.songwriter');
@@ -78,9 +76,8 @@ function createNewSong() {
 
    let btnDelete = document.createElement('button');
    li.appendChild(btnDelete).textContent = "Удалить";
-   function deleteParentElement() {
-      btnDelete.parentElement.remove();
-   };
-   btnDelete.addEventListener('click', deleteParentElement)
+   btnDelete.addEventListener('click', deleteParentElement = () => {
+      btnDelete.parentElement.remove()
+   });
 };
 btnAdd.addEventListener('click', createNewSong);
