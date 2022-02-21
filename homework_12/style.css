@@ -1,0 +1,179 @@
+html, body {
+margin: 0;
+padding: 0;
+background: #DAE1EC;
+}
+
+body {
+/* position: relative; */
+font-family: 'Inter', sans-serif;
+
+}
+
+.table_box {
+width:1020px ;
+height: 730px;
+background: #FFFFFF;
+box-sizing: border-box;
+margin-left: auto;
+margin-right: auto;
+border-radius: 6px;
+margin-top: 100px;
+/* filter: drop-shadow(0px 3px 6px rgba(75, 81, 91, 0.15)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.15)); */
+background: radial-gradient(circle closest-corner at 400px 300px, #fff, #bbc9cc);
+}
+
+caption {
+caption-side: top;
+text-align: left;
+margin-top: -20px;
+color: #606F89;
+}
+
+table { 
+width: 1020px;
+padding-top: 80px;
+font-family: "Inter", sans-serif;
+color: #2E3B52;
+/* border: 1px solid grey;
+border-collapse: collapse; */
+}
+
+
+tr:nth-child(odd) {              /* закрашує непарні стрічки */
+background: #F4F7FC;
+}
+
+/* головна стрічка */
+.title {
+height: 45px; 
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #606F89;
+/* border: 1px solid grey; */
+}
+
+td {
+height: 56px;
+/* border: 1px solid grey; */
+}
+
+input {
+width: 20px;
+height: 20px;
+margin-left: 40%;
+}
+
+th:first-child, td:first-child {
+width: 80px;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* color: #2E3B52; */
+}
+
+span {
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+color: #606F89;
+}
+
+td:nth-child(2), th:nth-child(2) {
+width: 242px;
+}
+
+td:nth-child(3), th:nth-child(3) {
+width: 308px;
+}
+
+td:nth-child(4), th:nth-child(4) {
+width: 100px;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+/* color: #2E3B52; */
+}
+
+td:nth-child(5), th:nth-child(5) {
+width: 110px;
+text-align: center;
+}
+
+button {
+width: 52px;
+height: 20px;
+border-radius: 11px;
+align-items: center;
+vertical-align: middle;
+text-align: center;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #0A65FF;
+}
+
+tr:nth-child(4) td:nth-child(5) button {
+width: 65px;
+border: 1px solid #606F89;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #606F89;
+background: white;
+}
+
+tr:nth-child(5) td:nth-child(5) button {
+width: 65px;
+border: 1px solid #606F89;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #606F89;
+background: white;
+}
+
+
+td:nth-child(6), th:nth-child(6) {
+width: 50px;
+text-align: right;
+}
+
+td:nth-child(7), th:nth-child(7) {
+width: 50px;
+text-align:center;
+}
+
+th:last-child, td:last-child {
+/* width: 50px; */
+text-align: left;
+}
+
+.main_checkbox {
+margin-left: 8px;
+}
+
+.table_box tr.title.table_border:hover {  /* Не знаю чому, але не працює при виділенні!!! */
+border: 1px solid blue;
+background-color: crimson;
+}
+
