@@ -1,0 +1,19 @@
+/* 
+    1920
+    1600
+    1280
+    1024
+    768
+    640
+    320
+*/
+
+@media screen and (max-width: 1920px) {
+
+    .container {
+        max-width: 1114px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
