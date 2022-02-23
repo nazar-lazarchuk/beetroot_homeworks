@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <form action="/" method="get" class="form">
+      <form action="/" method="get" class="form" style="position: relative;">
         <h2 class="form__header">Leave feedback</h2>
         <input
           type="text"
@@ -23,7 +23,6 @@
           class="form__input"
           id="name"
           placeholder="Enter your name and surname"
-          required
         /> <br>
         <input
           type="email"
@@ -31,15 +30,18 @@
           class="form__input"
           id="email"
           placeholder="Enter your e-mail"
-          required
         /> <br>
         <input
-        type="text"
+          type="text"
           name="comment"
           class="form__input"
           id="comment"
           placeholder="Leave your comment"
-        ></input> <br>
+          maxlength="255"
+        ></input>
+        <div  style="position: absolute; top: 270px; right: 55px; font-size: 10px;">
+          You can type <span id="counter"></span> symbols
+        </div> <br>
         <div class="form__questions" id="form1">
           <span class="form__question">
             What do you find the most interesting in our restourant?

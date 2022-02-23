@@ -9,10 +9,6 @@ body {
   background-color: black;
 }
 
-.wrapper {
-  display: relative;
-}
-
 .form {
   margin: 10vh auto 0 auto;
   background: white;
@@ -38,12 +34,7 @@ body {
 }
 
 .form__questions {
-  margin-bottom: 20px;
   text-align: left;
-}
-
-.form__questions:nth-child(3n) {
-  margin-bottom: 40px;
 }
 
 .form__input {
