@@ -4,9 +4,8 @@ const userComment = document.querySelector("#comment");
 const feedbackForm = document.querySelector(".form");
 const checkboxForm = document.querySelectorAll("#checkbox");
 const radioForm = document.querySelectorAll("#radio")
-const checkboxBlock = document.querySelectorAll("#form1")
-const radioBlock = document.querySelectorAll("#form2")
-
+const checkboxBlock = document.querySelector("#form1")
+const radioBlock = document.querySelector("#form2")
 
 const emailValidationBox = document.createElement("div");
 userEmail.after(emailValidationBox);
@@ -18,7 +17,7 @@ const commentValidationBox = document.createElement("div");
 userComment.after(commentValidationBox);
 
 const checkboxValidation = document.createElement("div");
-radioBlock.after(checkboxValidation);
+checkboxBlock.after(checkboxValidation);
 
 const radioValidation = document.createElement("div");
 radioBlock.after(radioValidation); 
@@ -44,26 +43,25 @@ const getNameValidationMessage = (name) => {
 };
 
 const getTextAreaValidationMessage = (comment) => {
-  if (userComment.value !== '') { 
-      
-    }else { "Please write comment"
-  } 
+  if(/[1]/g.test(userComment.value)){return "Please write comment without '1' "}
+  if (!/[A-Z][a-z]*/g.test(userComment.value)) { return "Please write correct comment"}
+  else { } 
 };
 
 const getRadioValidationMessage = (radio) => {
-  for (let i = 0; i < radio.length; i++) {
-    if (radio[i].checked) {
+  for (let i = 0; i < radioForm.length; i++) {
+    if (radioForm[i].checked) {
     }
   }
   return "pick up radio";
 };
 
+console.log(checkboxForm)
 const getСheckboxValidationMessage = (checkbox) => {
-  if (checkbox.checked) {
-  } else {
-    return "pick up checkbox";
-  }
+  if (!checkboxForm.checked) { return "pick up checkbox";
+  } 
 };
+
 
 const setInvalid = (field, messageBox, message) => {
   field.classList.add("is-invalid");
@@ -77,6 +75,7 @@ feedbackForm.addEventListener("submit", (e) => {
   const comment = userComment.value;
   const checkbox = checkboxForm;
   const radio = radioForm;
+
 
   const emailMessage = getEmailValidationMessage(email);
   const nameMessage = getNameValidationMessage(name);
@@ -97,11 +96,11 @@ feedbackForm.addEventListener("submit", (e) => {
     e.preventDefault();
   }
   if (radioMessage) {
-    setInvalid(radio, radioValidation, radioMessage);
+    setInvalid(radioForm, radioValidation, radioMessage);
     e.preventDefault();
   }
   if (checkboxMessage) {
-    setInvalid(checkbox, checkboxValidation, checkboxMessage);
+    setInvalid(checkboxForm, checkboxValidation, checkboxMessage);
     e.preventDefault();
   }
 });
