@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Калькулятор</title>
+	<link rel="stylesheet" href="../css/template.css"/>
+</head>
+<body>
+	<form>
+		<div><label>Перше число:</label><input type="text" name="first" placeholder="Введіть число"/></div>
+		<div><label>Друге число:</label><input type="text" name="second" placeholder="Введіть число"/></div>
+		<div><label>Виберіть дію:</label>
+			<select name="action">
+				<option>+</option>
+				<option>-</option>
+				<option>*</option>
+				<option>/</option>
+			</select>
+		</div>
+		<div><input type="button" name="send" value="Розрахунок"/></div>
+		<div><label>Результат:</label><input type="text" name="result" placeholder="Відповідь"/></div>
+	</form>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/calculator.js"></script>
+</body>
+</html>
