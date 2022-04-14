@@ -1,0 +1,95 @@
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: black;
+  font-family: 'Arial';
+}
+
+.block {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 1000px;
+  background-image: url("/normal/assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.block__result {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  font-size: 80px;
+  color: #fff;
+}
+
+.block__buttons {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  max-width: 450px;
+}
+
+.block__buttons button {
+  border-radius: 50px;
+  width: 87px;
+  height: 87px;
+  margin-top: 17px;
+  margin-right: 10px;
+  font-size: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #414040;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.block__buttons button:nth-child(4n), .block button:last-child {
+  background: orange;
+}
+
+.block__buttons button:nth-child(1), .block button:nth-child(2), .block button:nth-child(3) {
+  background: #9e9e9e;
+  color: black;
+}
+
+.block__buttons button:hover {
+  background: #494949;
+}
+
+.block__buttons button:active {
+  background: #616161;
+}
+
+.block__buttons button:nth-child(4n):hover, .block button:last-child:hover {
+  background: #fabf51;
+}
+
+.block__buttons button:nth-child(4n):active, .block button:last-child:active {
+  background: white;
+  color: orange;
+}
+
+.block__buttons button:nth-child(1):hover, .block button:nth-child(2):hover, .block button:nth-child(3):hover {
+  background: #c2c0c0;
+}
+
+.block__buttons button:nth-child(1):active, .block button:nth-child(2):active, .block button:nth-child(3):active {
+  background: #d8d8d8;
+}
+
+.block__line {
+  position: absolute;
+  width: 170px;
+  background: white;
+  height: 5px;
+  border-radius: 20px;
+  left: 40%;
+  bottom: 8%;
+}
+/*# sourceMappingURL=style.css.map */
