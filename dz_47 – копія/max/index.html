@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/max/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <title>FarCry4</title>
+  </head>
+  <body>
+    <div class="block">
+      <div class="tabs">
+        <div class="tabs-triggers">
+          <div>
+            <img src="/max/assets/tooltip.svg" alt="" srcset="" />
+            <a href="#tabs-1" class="tabs-triggers__item">INFORMATION</a>
+            <!-- при зміні на tabs-triggers__item--active я не зробив зміну кольору картинки, бо на fontawesome ці картинки платні -->
+          </div>
+          <div>
+            <img src="/max/assets/card.svg" alt="" srcset="" />
+            <a href="#tabs-2" class="tabs-triggers__item">RATINGS INFO</a>
+          </div>
+          <div>
+            <img src="/max/assets/basket.svg" alt="" srcset="" />
+            <a href="#tabs-3" class="tabs-triggers__item">WHERE TO BUY</a>
+          </div>
+        </div>
+
+        <div id="tabs-content">
+          <div id="tabs-1" class="tabs-content__item">
+            <div class="left-side">
+              <img src="/max/assets/game_img.png" alt="cover" srcset="" />
+              <div class="left-side__stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="right-side__header">
+                <div class="right-side__text">
+                  <span class="right-side__title"> FarCry 4 </span>
+                  <br />
+                  <span class="right-side__sub-title">
+                    First Released Nov 17, 2014
+                  </span>
+                </div>
+                <div class="right-side__rate">
+                  <img src="/max/assets/score.svg" alt="" srcset="" />
+                </div>
+              </div>
+              <div class="right-side__main">
+                <p>
+                  In Far Cry 4, players find themselves in Kyrat, a
+                  breathtaking, perilous and wild region of the Hima layas
+                  struggling under the regime of a despotic self-appointed king.
+                </p>
+              </div>
+              <div class="right-side__bottom">
+                <div>
+                  <span class="right-side__discount"> 20% OFF! </span>
+                  <span class="right-side__price"> $59.96 </span>
+                </div>
+                <button class="right-side__buy">BUY IT NOW</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="tabs-2" class="tabs-content__item">
+            <h2>Tab 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus repellendus provident exercitationem asperiores
+              neque autem soluta. Neque minus odit doloremque labore, ratione a
+              voluptates fugit quos nostrum quia praesentium ipsum.
+            </p>
+          </div>
+
+          <div id="tabs-3" class="tabs-content__item">
+            <h2>Tab 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus repellendus provident exercitationem asperiores
+              neque autem soluta. Neque minus odit doloremque labore, ratione a
+              voluptates fugit quos nostrum quia praesentium ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/fcc11c67f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/max/main.js"></script>
+  </body>
+</html>
