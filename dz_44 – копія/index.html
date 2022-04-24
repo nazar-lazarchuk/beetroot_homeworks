@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/images/head_img.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather forecast</title>
+  </head>
+  <body>
+    <div class="weather">
+        <div class="weather__header">
+            <h2 class="weather__header--title">Weather forecast</h2>
+            <img src="/images/header_img.png" alt="weather_picture">
+        </div>
+      
+      <div class="line"></div>
+      <div class = "weather__get_info">
+        <h3 class="weather__subtitle">
+          Please enter your city
+        </h3>
+          <input type="text" name="weatherCity" class="weather__city" placeholder="For example: Kyiv" required>
+      </div>
+ 
+      <div class="weather__information">
+        <h3 id="weather__city"></h3>
+        <h4 id="weather__temp"></h4>
+        <h4 id="weather__mintemp"></h4>
+        <h4 id="weather__maxtemp"></h4>
+        <h4 id="weather__wind"></h4>
+        <p id="weather__details">
+        </p>
+      </div>
+
+      <button class="weather__button">To know the weather!</button>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
