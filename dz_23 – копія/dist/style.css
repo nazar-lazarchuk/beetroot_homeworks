@@ -1,0 +1,110 @@
+body {
+  color: #03033a;
+  font-family: "Roboto";
+  background-color: #eee;
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.back_image {
+  max-height: 350px;
+  max-width: 200px;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 300px 40px;
+      grid-template-areas: "cards__first cards__second cards__third" "cards__fourth cards__fiveth cards__sixth";
+}
+
+.cards__first {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cards__first;
+}
+
+.cards__second {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cards__second;
+}
+
+.cards__third\\ {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: cards__third;
+}
+
+.cards__fourth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cards__fourth;
+}
+
+.cards__fiveth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cards__fiveth;
+}
+
+.cards__sixth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: cards__sixth;
+}
+
+.card-front__img,
+.card-back__img {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  -webkit-transition: -webkit-transform .6s linear;
+  transition: -webkit-transform .6s linear;
+  transition: transform .6s linear;
+  transition: transform .6s linear, -webkit-transform .6s linear;
+}
+
+.card-back__img {
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+  background-color: white;
+  -webkit-transition: -webkit-transform .6s linear;
+  transition: -webkit-transform .6s linear;
+  transition: transform .6s linear;
+  transition: transform .6s linear, -webkit-transform .6s linear;
+}
+
+.card-item:hover > .card-front__img {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+          transform: perspective(600px) rotateY(-180deg);
+}
+
+.card-item:hover > .card-back__img {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.card-front__img {
+  -webkit-transform: perspective(600px) rotate(0deg);
+          transform: perspective(600px) rotate(0deg);
+}
+/*# sourceMappingURL=style.css.map */
